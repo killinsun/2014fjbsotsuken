@@ -1,0 +1,19 @@
+body{
+	background-color: #E0FFFF;
+	width:1000px;
+	position:absolute;
+	left:50%;
+	margin-left:-500px;
+}
+
+#a{
+	border:dotted black;
+}
+
+#pv{
+	float:right;
+}
+
+#st{
+	float:left;
+}

@@ -1,0 +1,28 @@
+@charset utf-8;
+
+#contents{
+	height: 200px;
+}
+
+#b {
+	margin-top: 20px;
+	line-height: 1.4em;
+}
+
+#contents a{/*リンクされた文字*/
+	color: #0000ff;
+}
+#contents a:link {/*未訪問のリンク*/
+	color: #0000ff;
+}
+#contents a:visited {/*訪問後のリンク*/
+	color: #cc00ff;
+}
+#contents a:hover {/*マウスをのせたとき*/
+	color: #cc00ff;
+    text-decoration: none;
+}
+#contents a:active {/*クリック中*/
+	color: #cc00ff;
+	text-decoration: none;
+}

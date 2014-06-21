@@ -1,0 +1,26 @@
+#button{
+	background: url(..images/contents_bg.gif) repeat-y center;
+	height:350px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+}
+
+#skype{
+	background: url(..images/contents_bg.gif) repeat-y center;
+	float:left;
+	width:260px;
+	height:200px;
+	}
+	
+#douga{
+	float:left;
+	width:260px;
+	height:200px;
+	}
+	
+#kamoku{
+	float:right;
+	width:260px;
+	height:200px;
+	}

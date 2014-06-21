@@ -1,0 +1,13 @@
+CREATE TABLE コメント内容
+(
+	コメントID CHAR(5),
+	つぶやきユーザID CHAR(7),
+	つぶやきID CHAR(8),
+	ユーザID CHAR(7),
+	コメント VARCHAR2(1000)	NOT NULL,
+	コメント日時 DATE NOT NULL,
+	FOREIGN KEY(つぶやきID,つぶやきユーザID) 
+	REFERENCES つぶやき(つぶやきID,つぶやきユーザID),
+	FOREIGN KEY(ユーザID) REFERENCES ユーザ(ユーザID),
+	PRIMARY KEY(コメントID,つぶやきユーザID,つぶやきID,ユーザID)
+)

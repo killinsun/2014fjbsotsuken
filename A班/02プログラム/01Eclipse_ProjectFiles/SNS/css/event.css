@@ -1,0 +1,92 @@
+body {
+	background-color: #E0FFFF;
+	width: 1200px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	position: relative;
+}
+
+#Logo {
+	float: left;
+}
+
+#SubMenu {
+	width: 1000px;
+	height: 40px;
+	float: right;
+}
+
+#LoginName {
+	width: 300px;
+	height: 60px;
+	float: right;
+}
+
+#xLogo {
+	background-color: white;
+	width: 40px;
+	height: 60px;
+	border: 1px solid;
+	float: left;
+
+}
+
+#yLogo {
+	background-color: white;
+	width: 40px;
+	height: 60px;
+	border: 1px solid;
+	float: left;
+}
+
+
+#zLogo {
+	background-color: white;
+	width: 210px;
+	height: 60px;
+	border: 1px solid;
+	float: left;
+}
+
+
+#UserMenu {
+	width: 1200px;
+	height: 100px;
+	float: left;
+
+}
+
+#event_left {
+	margin-top: 10px;
+	float: left;
+}
+
+#event_right {
+	margin-top: 10px;
+	margin-left: 40px;
+	float: left;
+}
+
+#schedule {
+	width: 350px;
+	height: 350px;
+	overflow: scroll;
+	overflow-x: hidden;
+	color: #333333;
+	float: left;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+#schedule_syousai {
+	width: 275px;
+	height: 350px;
+	margin-left: 20px;
+	margin-top: 10px;
+	float: left;
+}

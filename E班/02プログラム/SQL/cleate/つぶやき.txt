@@ -1,0 +1,13 @@
+CREATE TABLE つぶやき
+(
+	つぶやきID CHAR(8),
+	つぶやきユーザID CHAR(7),
+	つぶやき VARCHAR2(4000),
+	つぶやき日時 DATE NOT NULL,
+	つぶやき画像 VARCHAR2(4000),
+	FOREIGN KEY(つぶやきユーザID) REFERENCES ユーザ(ユーザID),
+	PRIMARY KEY(つぶやきID,つぶやきユーザID)
+)
+
+
+NOT　NULL使えないかも

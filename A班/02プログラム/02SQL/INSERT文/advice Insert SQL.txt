@@ -1,0 +1,8 @@
+﻿INSERT INTO 投稿表
+VALUES('Q' || lpad( 投稿NoIDシーケンス.nextval, 3, '0' ), 'Z01', 'あああああ', '0');
+
+commit;
+
+
+INSERT INTO 返答表
+VALUES('Q' || lpad( 投稿NoIDシーケンス.nextval, 3, '0' ) '"+ KoumokuID + "', '" +"" + Naiyou + "', '0')";

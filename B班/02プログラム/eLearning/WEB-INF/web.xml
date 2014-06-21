@@ -1,0 +1,210 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>ListeningServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.ListeningServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ListeningServlet</servlet-name>
+		<url-pattern>/ListeningServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListeningNextServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.ListeningNextServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ListeningNextServlet</servlet-name>
+		<url-pattern>/ListeningNextServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>WritingServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.WritingServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>WritingServlet</servlet-name>
+		<url-pattern>/WritingServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReadingServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.ReadingServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ReadingServlet</servlet-name>
+		<url-pattern>/ReadingServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MainmenuServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.MainmenuServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MainmenuServlet</servlet-name>
+		<url-pattern>/MainmenuServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>TopmenuServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.TopmenuServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TopmenuServlet</servlet-name>
+		<url-pattern>/TopmenuServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>englishServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.englishServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>englishServlet</servlet-name>
+		<url-pattern>/englishServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>e-learningmenuServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.e-learningmenuServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>e-learningmenuServlet</servlet-name>
+		<url-pattern>/e-learningmenuServlet</url-pattern>
+	</servlet-mapping>
+
+		<servlet>
+		<servlet-name>englishmenuServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.englishmenuServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>englishmenuServlet</servlet-name>
+		<url-pattern>/englishmenuServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+        <servlet-name>WritinganswerServlet</servlet-name>
+        <servlet-class>jp.ac.fjb.eLearning.servlet.WritinganswerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    	<servlet-name>WritinganswerServlet</servlet-name>
+    	<url-pattern>/WritinganswerServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>WritingquestionServlet</servlet-name>
+        <servlet-class>jp.ac.fjb.eLearning.servlet.WritingquestionServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    	<servlet-name>WritingquestionServlet</servlet-name>
+    	<url-pattern>/WritingquestionServlet</url-pattern>
+    </servlet-mapping>
+
+	<servlet>
+		<servlet-name>Reading_QServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.ReadingAnswerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Reading_QServlet</servlet-name>
+		<url-pattern>/Reading_QServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Reading_AServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.Reading_SaitenServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Reading_AServlet</servlet-name>
+		<url-pattern>/Reading_AServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>WritingDougaServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.WritingDougaServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>WritingDougaServlet</servlet-name>
+		<url-pattern>/WritingDougaServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MondaiServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.MondaiServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MondaiServlet</servlet-name>
+		<url-pattern>/MondaiServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SetAnswerServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.SetAnswerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SetAnswerServlet</servlet-name>
+		<url-pattern>/SetAnswerServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SetQuestionServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.SetQuestionServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SetQuestionServlet</servlet-name>
+		<url-pattern>/SetQuestionServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListeningAnswerServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.ListeningAnswerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ListeningAnswerServlet</servlet-name>
+		<url-pattern>/ListeningAnswerServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReadingAnswerServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.ReadingAnswerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ReadingAnswerServlet</servlet-name>
+		<url-pattern>/ReadingAnswerServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Reading_SaitenServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.eLearning.servlet.Reading_SaitenServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Reading_SaitenServlet</servlet-name>
+		<url-pattern>/Reading_SaitenServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	</web-app>

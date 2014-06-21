@@ -1,0 +1,115 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>main</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.MainServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>advice</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.AdviceServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>search</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.SearchServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>event</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.EventServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>profile</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.ProfileServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>editprofile</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.EditProfileServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>previewprofile</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.PreviewProfileServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>masmain</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.MasterMaintenanceServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>createuser</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.CreateUserServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>userlist</servlet-name>
+		<servlet-class>jp.ac.fjb.sns.servlet.UserListServlet</servlet-class>
+	</servlet>
+
+
+
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>main</servlet-name>
+		<url-pattern>/MainServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>search</servlet-name>
+		<url-pattern>/SearchServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>advice</servlet-name>
+		<url-pattern>/AdviceServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>event</servlet-name>
+		<url-pattern>/EventServlet</url-pattern>
+	</servlet-mapping>
+
+<servlet-mapping>
+		<servlet-name>profile</servlet-name>
+		<url-pattern>/ProfileServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>editprofile</servlet-name>
+		<url-pattern>/EditProfileServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>previewprofile</servlet-name>
+		<url-pattern>/PreviewProfileServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>masmain</servlet-name>
+		<url-pattern>/MasterMaintenanceServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>createuser</servlet-name>
+		<url-pattern>/CreateUserServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>userlist</servlet-name>
+		<url-pattern>/UserListServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>

@@ -1,0 +1,218 @@
+@charset "shift_jis";
+
+body {
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	font-size: 75%;
+	line-height: 2;
+	color: #666666;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background: #FFFFFF url(../images/bg.gif);
+}
+
+ul{
+	list-style-type: none;
+}
+
+img {
+	border: none;
+}
+
+h1,h2,h3,p,ul,li{
+	margin: 0px;
+	padding: 0px;
+}
+
+input {
+	background: #f5f5f5;
+}
+
+.color {
+	color: #1540ef;
+}
+
+
+.meter-wrap{
+    position: relative;
+}
+
+.meter-wrap, .meter-value, .meter-text {
+    /* The width and height of your image */
+    width: 155px; height: 10px;
+}
+
+.meter-wrap, .meter-value {
+    background: #bdbdbd url(/path/to/your-image.png) top left no-repeat;
+}
+
+.meter-text {
+    position: absolute;
+    top:0; left:0;
+
+    padding-top: 5px;
+
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+/*メイン画像（画像の両サイドの影を設定しています）
+------------------------------------------------------------------*/
+#main-img {
+	background: url(../images/main_img_bg.gif) repeat-y center;
+	padding-right: 6px;
+	padding-left: 6px;
+	position: relative;
+}
+
+
+
+/*h1タグ設定
+------------------------------------------------------------------
+■font-sizeで文字の大きさを指定しています。
+■leftとtopの数値を変更してh1の位置の微調整ができます。
+■colorで文字色を指定します。
+------------------------------------------------------------------*/
+#main-img h1 {
+	position: absolute;
+	font-size: 80px;
+	color: blue;
+	font-weight: normal;
+	left: 280px;
+	top: 10px;
+}
+
+
+
+/*コンテナー
+------------------------------------------------------------------*/
+#container {
+	margin: 0px auto 20px;
+	width: 812px;
+	text-align: left;
+}
+
+
+
+/*コンテンツ（メイン、サブの両ブロックの外側）
+------------------------------------------------------------------*/
+#contents {
+	background: url(../images/contents_bg.gif) repeat-y center;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+
+
+/*メインメニュー（リストタグを横並びに設定）
+------------------------------------------------------------------*/
+ul#menu li {
+	display: inline;
+}
+
+
+
+/*メインコンテンツ（右側ブロック）
+------------------------------------------------------------------*/
+#main {
+	float: right;
+	width: 600px;
+	display: inline;
+	margin-right: 37px;
+}
+
+#main h2 {
+	line-height: 33px;
+	background: url(../images/midashi_base.gif);
+	height: 33px;
+	font-size: 100%;
+	padding-left: 40px;
+}
+
+#main p {
+	padding: 0.5em 10px 1em;
+}
+
+
+
+/*サブコンテンツ（左側ブロック）
+------------------------------------------------------------------*/
+#sub {
+	float: left;
+	width: 226px;
+	display: inline;
+	margin-left: 37px;
+}
+
+#sub p {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+/*サブコンテンツ内、サブメニュー
+------------------------------------------------------------------*/
+#sub .submenu {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 5px solid #1540ef;
+	margin-bottom: 20px;
+	border-right: 1px solid #1540ef;
+	border-left: 1px solid #1540ef;
+}
+
+#sub .submenu a {
+	color: #1540ef;
+	text-decoration: none;
+	border-bottom: 1px dotted #1540ef;
+	display: block;
+	width: 224px;
+}
+
+#sub .submenu a:hover {
+	background: #f5f5f5;
+}
+
+/*サブコンテンツ内、サブメニュー下のTOPICSコーナー
+------------------------------------------------------------------*/
+#sub .menubottom {
+	border-right: 1px solid #1540ef;
+	border-bottom: 5px solid #1540ef;
+	border-left: 1px solid #1540ef;
+	padding-right: 5px;
+	padding-left: 5px;
+	width: 214px;
+}
+
+
+
+
+/*フッター
+------------------------------------------------------------------*/
+#footer {
+	clear: both;
+	text-align: center;
+	background: url(../images/footer_bg.gif) no-repeat center top;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+/*clearfix
+------------------------------------------------------------------*/
+#contents:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+#contents { display: inline-block; }
+
+/* Hides from IE-mac \*/
+*html #contents { height: 1%; }
+#contents { display: block; }
+/* End hide from IE-mac */

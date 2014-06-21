@@ -1,0 +1,41 @@
+
+td{
+	text-align:center;
+	vertical-align: top;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#month{
+	float: left;
+	margin-left:250px;
+}
+
+#today{
+	text-align:center;
+}
+
+#Ikkatu{
+	background-color:#eed777;
+}
+
+#Kobetu{
+	background-color:#bfffc0;
+}
+
+#button{
+	widgth:50px;
+    text-align: center;
+}
+
+#mainContent{
+	overflow-y: scroll;
+}
+
+#next{
+	float: right;
+}
+
+#com{
+	text-align:right;
+}

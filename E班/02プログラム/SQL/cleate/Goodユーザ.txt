@@ -1,0 +1,10 @@
+CREATE TABLE Goodユーザ
+(
+	つぶやきID CHAR(8),
+	つぶやきユーザID CHAR(7),
+	GoodユーザID CHAR(7),
+	FOREIGN KEY(つぶやきID,つぶやきユーザID) 
+	REFERENCES つぶやき(つぶやきID,つぶやきユーザID),
+	FOREIGN KEY(GoodユーザID) REFERENCES ユーザ(ユーザID),
+	PRIMARY KEY(つぶやきID,つぶやきユーザID)
+)

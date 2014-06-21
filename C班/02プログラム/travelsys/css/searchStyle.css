@@ -1,0 +1,17 @@
+@charset utf-8;
+
+#c1 {
+	background-color: #3399ff;
+	padding: 5px;
+	margin: 0px 40px;
+	font-size: 15px;
+}
+
+#c2 {
+	border: 2px solid #3399ff;
+	padding: 12px;
+	line-height: 17px;
+	letter-spacing: 0.5px;
+	margin: 0px 40px 0px 40px;
+	font-size: 15px;
+}

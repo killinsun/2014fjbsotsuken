@@ -1,0 +1,199 @@
+﻿@charset "utf-8";
+
+/*-----全体の指定-----*/
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+/*-----メイン-----*/
+#main {
+	margin: 0px auto;
+	width: calc(100% -180px);
+	height: auto;
+}
+
+#timeLine {
+	margin-top: 85px;
+	margin-left: 180px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#contents {
+	margin: 0px auto;
+	padding-top: 5px;
+	text-align: center;
+}
+
+#table {
+	width: 880px;
+	height: 300px;
+	margin: 50px auto 20px auto;
+	text-align: left;
+	border: 1px solid #bc927a; 
+}
+
+#mailbutton {
+	width: 100%;
+	height: 30px;
+	background-color: #cccccc;
+	text-align: left;	
+}
+
+#operation {
+	width: 111px;
+	border-right: 1px solid #bc927a;
+}
+
+#delete {
+	text-align: left;
+}
+
+#button1 {
+	width: 110px;
+	height: 27px;
+	margin-top: 1px;
+}
+
+#button2 {
+	width: 53px;
+	height: 27px;
+	margin-top: 1px;
+	margin-left: 2px;
+}
+#button3 {
+	width: 100px;
+	height: 27px;
+	margin-top: 1px;
+	margin-left: 2px;
+}
+#button4 {
+	width: 53px;
+	height: 27px;
+	margin-top: 1px;
+	margin-left: 2px;
+}
+
+.text {
+	width: 600px;
+	height: 30px;
+	border: 1px solid #bc927a;
+}
+textarea {
+	width: 620px;
+	height: 180px;
+	resize: none;
+	border: 1px solid #bc927a;
+	
+}
+
+
+
+/*----- テーブル -----*/
+table {
+	border-collapse: collapse;
+}
+
+#mailtable {
+	width: 100%;
+	height: 115px;	
+}
+
+/*----- #tableの中の孫要素のtrを指定 -----*/
+.box {
+	text-align: center;
+	border-bottom: 1px solid #bc927a; 
+}
+
+#action {
+	width: 113px;
+	height: 30px;
+	border-bottom: 1px solid #bc927a;
+}
+
+
+.box {
+	height: 28px;
+}
+
+/*
+.space {
+	width: 115px;
+	height: 140px;
+}
+*/
+#mailtable1 {
+	width: 115px;
+	height: calc(100% - 30px); 
+	float: left;
+	border-right: 1px solid #bc927a;
+	margin-bottom: 0px;
+}
+
+#mailtable2 {
+	width: 765px;
+	height: 25px; 
+	float: right;
+}
+#textmain {
+	width: 300px;
+	height: 100px;
+}
+
+
+/*----- 子孫要素のtdにボーダーを指定  -----*/
+.line {
+	/*border-right: 1px solid #bc927a;*/
+	border-bottom: 1px solid #bc927a;
+}
+
+#itemName {
+	border-bottom: 1px solid #bc927a;
+}
+
+
+.partition {
+	border-right: 1px solid #bc927a;
+}
+
+#itemName > td {
+	font-weight: bold;
+}
+
+.checkbox {
+	width: 20px;
+	height: 20px;
+}
+
+.check {
+
+}
+
+.clip {
+	width: 25px;
+	height: 20px;
+}
+
+.clipImg {
+	width: 15px;
+	height: 15px;
+	margin-top: 5px;
+	margin-left: 3px;
+}
+.textsize {
+	margin-left: 2px;
+}
+	
+
+
+/*-----フッター-----*/
+#footer {
+	margin-top : 0px;
+	padding-top: 0px;
+}
+
+

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page pageEncoding="UTF-8" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>レイアウトテスト</title>
+    <link rel="stylesheet" type="text/css" href="/sotukenD/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/sotukenD/css/main.css" />
+	<SCRIPT language="JavaScript">
+	<!--
+	// ツリーメニュー
+	flag = false;
+	function treeMenu(tName) {
+	  tMenu = document.all[tName].style;
+	  if(tMenu.display == 'none') tMenu.display = "block";
+	  else tMenu.display = "none";
+	}
+	//-->
+	</SCRIPT>
+</head>
+<body>
+<div class="frm">
+	<!--header部分-->
+	<header id="header">
+			<div id="title">
+			ファイル共有
+		</div>
+		<div id="account" align="right">
+			<div id="name">苗字　名前</div>
+			<!--ログアウトボタン-->
+			<button type="button" id="logout">ログアウト</button>
+		</div>
+		<div>　
+		</div>
+
+	</header>
+
+	<!--ページ移動、ナビゲーション部分-->
+	<nav id="nav">
+
+			<iframe src="./../mainMenu.jsp" name="mainMenu" Align="left" Frameborder="no" Marginheight="0" Width="200">
+
+			</iframe>
+
+	</nav>
+
+
+	<!--作業画面-->
+	<section id="mainContent">
+		<A href>■ リンク</a><br>
+
+			┣ <A href="javaScript:treeMenu('treeMenu2-1')">■ 新メニュー</a><br>
+				<DIV id="treeMenu2-1" style="display:none">
+				　┣ <A href="http://www.yahoo.co.jp/">ホウレンソウのソテー</A><BR>
+				　┣ <A href="http://www.yahoo.co.jp/">ナスときのこのラーグスパゲティ</A><BR>
+				　┗<A href="http://www.yahoo.co.jp/">キリンオールフリー</A><BR>
+				</DIV>
+			┣ <A href="javaScript:treeMenu('treeMenu2-2')">■ マニュアル</a><br>
+				<DIV id="treeMenu2-2" style="display:none">
+				　┣ <A href="http://www.yahoo.co.jp/">フライヤーの点検</A><BR>
+				　┣ <A href="http://www.yahoo.co.jp/">分電盤管理</A><BR>
+				　┗ <A href="http://www.yahoo.co.jp/">出納表</A><BR>
+				</DIV>
+			┗ <A href="javaScript:treeMenu('treeMenu2-3')">■ トレーニングビデオ</a><br>
+
+				<DIV id="treeMenu2-3" style="display:none">
+				　┣ <A href="http://www.yahoo.co.jp/">フロア・キッチン</A><BR>
+				　┗ <A href="http://www.yahoo.co.jp/">オーダー一覧</A><BR>
+				</DIV>
+
+	</section>
+</div>
+
+</body>
+</html>

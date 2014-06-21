@@ -1,0 +1,9 @@
+CREATE TABLE グループ管理
+(
+	グループID CHAR(5),
+	ユーザID CHAR(7),
+	FOREIGN KEY(グループID) REFERENCES グループ(グループID),
+	FOREIGN KEY(ユーザID) REFERENCES ユーザ(ユーザID),
+	PRIMARY KEY (グループID,ユーザID),
+)
+

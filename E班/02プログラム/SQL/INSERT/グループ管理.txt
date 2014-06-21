@@ -1,0 +1,23 @@
+INSERT INTO グループ管理
+       VALUES ('G0001','0000001');
+
+INSERT INTO グループ管理
+       VALUES ('G0001','0000002');
+
+INSERT INTO グループ管理
+       VALUES ('G0002','0000001');
+
+INSERT INTO グループ管理
+       VALUES ('G0002','0000003');
+
+INSERT INTO グループ管理
+       VALUES ('G0003','0000001');
+
+INSERT INTO グループ管理
+       VALUES ('G0003','0000002');
+
+INSERT INTO グループ管理
+       VALUES ('G0003','0000003');
+
+INSERT INTO グループ管理
+       VALUES ('G0003','0000004');

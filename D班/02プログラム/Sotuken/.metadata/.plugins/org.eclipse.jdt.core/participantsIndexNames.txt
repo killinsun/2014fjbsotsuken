@@ -1,0 +1,23 @@
+INDEX VERSION 1.126
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\969968605.index
+\sample\WEB-INF\src
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\193274624.index
+\sotukenD\WEB-INF\src
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2558091425.index
+\sotukenD\WEB-INF\src
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2812505648.index
+\sotukenD\WEB-INF\src
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1541025811.index
+\sotukenD\WEB-INF\src
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1411736638.index
+\sotukenD\WEB-INF\src
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1754147000.index
+\sotukenD\WEB-INF\src
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2755368626.index
+\sotukenD\WEB-INF\src
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2620605199.index
+\sotukenD\WEB-INF\src
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\328727861.index
+\sotukenD\WEB-INF\src
+I:\Sotuken\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2937401774.index
+\sotukenD\WEB-INF\src

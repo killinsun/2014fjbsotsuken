@@ -1,0 +1,9 @@
+@charset utf-8;
+
+.pliceWrap {
+	font-size: 15px;
+	background-color: #ffffff;
+	width: 300px;
+	padding: 0px;
+    border: 2px solid #3399ff;
+}

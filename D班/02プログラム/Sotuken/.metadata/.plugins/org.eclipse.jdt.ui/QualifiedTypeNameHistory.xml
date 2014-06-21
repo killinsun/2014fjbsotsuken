@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.model.ContactModel"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.beans.UserContactBean"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.util.DBManager"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.model.UserListModel"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.model.UserSignModel"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.beans.UserSignBean"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.beans.UserListBean"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.model.UserEditModel"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.bean.UserEditBean"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.servlet.ScheduleForBean"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.bean.ScheduleForBean"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="jp.ac.fjb.sotukenD.bean.LoginFormBeans"/>
+</qualifiedTypeNameHistroy>

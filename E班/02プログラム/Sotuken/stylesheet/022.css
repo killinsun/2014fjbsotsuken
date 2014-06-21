@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/*-----メイン-----*/
+#main h2{
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.button {
+	width: 200px; 
+	height: 120px;
+	margin-left: 30px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: bold;
+}

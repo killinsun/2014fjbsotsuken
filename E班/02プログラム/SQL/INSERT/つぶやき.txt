@@ -1,0 +1,2 @@
+INSERT INTO ‚Â‚Ô‚â‚«
+       VALUES ('T0000001','0000001','‰“Še',SYSDATE,'');

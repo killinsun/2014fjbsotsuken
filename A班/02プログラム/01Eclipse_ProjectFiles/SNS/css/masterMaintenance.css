@@ -1,0 +1,60 @@
+﻿body {
+	background-color: #E0FFFF;
+	width: 1200px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	position: relative;
+}
+
+#Logo {
+	float: left;
+}
+
+#SubMenu {
+	width: 1000px;
+	height: 40px;	
+	float: right;
+}
+
+#LoginName {
+	width: 300px;
+	height: 60px;
+	float: right;
+}
+
+#xLogo {
+	background-color: white;
+	width: 40px;
+	height: 60px;
+	border: 1px solid;
+	float: left;
+	
+}
+
+#yLogo {
+	background-color: white;
+	width: 40px;
+	height: 60px;
+	border: 1px solid;
+	float: left;
+}
+
+
+#zLogo {
+	background-color: white;
+	width: 210px;
+	height: 60px;
+	border: 1px solid;
+	float: left;
+}
+
+
+#manage {
+	width: 1200px;
+	height: 100px;
+	float: left;
+	
+}

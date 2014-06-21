@@ -1,0 +1,253 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>BbsNextServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.BbsNextServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>BbsServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.BbsServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>BbsButtonServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.BbsButtonServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ChiikiBbsServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.ChiikiBbsServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>CommentServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.CommentServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>NewPlanPressServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.NewPlanPressServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.SearchServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>KensakuKekka</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.KensakuKekkaServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Syousai</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.SyousaiServlet</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>SyukuhakusakiHenkou</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.SyukuhakusakiHenkouServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.IndexServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>serchServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.serchServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MenuServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.MenuServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserMenuServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.UserMenuServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserMenuNextServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.UserMenuNextServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserHensyuEndServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.UserHensyuEndServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>userregisterServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.userregisterServlet</servlet-class>
+	</servlet>
+		<servlet>
+		<servlet-name>userkakuninServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.userkakuninServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>userendServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.userendServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>HotelChangeServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.HotelChangeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SerchOkServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.SerchOkServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SearchResult</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.SearchResultServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PlanDetail</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.PlanDetailServlet</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>PlanChange</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.PlanChangeServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>UploadFileServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.UploadFileServlet</servlet-class>
+	</servlet>
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>BbsNextServlet</servlet-name>
+		<url-pattern>/BbsNextServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/IndexServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>serchServlet</servlet-name>
+		<url-pattern>/serchServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MenuServlet</servlet-name>
+		<url-pattern>/MenuServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserMenuServlet</servlet-name>
+		<url-pattern>/UserMenuServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserMenuNextServlet</servlet-name>
+		<url-pattern>/UserMenuNextServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UserHensyuEndServlet</servlet-name>
+		<url-pattern>/UserHensyuEndServlet</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>userregisterServlet</servlet-name>
+		<url-pattern>/userregisterServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>userkakuninServlet</servlet-name>
+		<url-pattern>/userkakuninServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>userendServlet</servlet-name>
+		<url-pattern>/userendServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>BbsServlet</servlet-name>
+		<url-pattern>/BbsServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>BbsButtonServlet</servlet-name>
+		<url-pattern>/BbsButtonServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ChiikiBbsServlet</servlet-name>
+		<url-pattern>/ChiikiBbsServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CommentServlet</servlet-name>
+		<url-pattern>/CommentServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>NewPlanPressServlet</servlet-name>
+		<url-pattern>/NewPlanPressServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/SearchServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>KensakuKekka</servlet-name>
+		<url-pattern>/KensakuKekkaServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Syousai</servlet-name>
+		<url-pattern>/SyousaiServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SyukuhakusakiHenkou</servlet-name>
+		<url-pattern>/SyukuhakusakiHenkouServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>HotelChangeServlet</servlet-name>
+		<url-pattern>/HotelChangeServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SerchOkServlet</servlet-name>
+		<url-pattern>/SerchOkServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SearchResult</servlet-name>
+		<url-pattern>/SearchResultServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PlanDetail</servlet-name>
+		<url-pattern>/PlanDetailServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>PlanChange</servlet-name>
+		<url-pattern>/PlanChangeServlet</url-pattern>
+	</servlet-mapping>
+
+		<servlet-mapping>
+		<servlet-name>UploadFileServlet</servlet-name>
+		<url-pattern>/UploadFileServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>

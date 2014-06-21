@@ -1,0 +1,23 @@
+INSERT INTO メッセージ
+       VALUES ('MS000001','0000001','G0001','テストメッセ','',SYSDATE,'');
+
+INSERT INTO メッセージ
+       VALUES ('MS000002','0000001','G0001','スタンプが送信されました','ST0001',SYSDATE,'');
+
+INSERT INTO メッセージ
+       VALUES ('MS000003','0000001','G0002','テストメッセG2','',SYSDATE,'');
+
+
+INSERT INTO メッセージ
+       VALUES ('MS000004','0000001','G0003','テストメッセG3','',SYSDATE,'');
+
+
+INSERT INTO メッセージ
+       VALUES ('MS000005','0000002','G0001','テストメッセ','',SYSDATE,'');
+
+
+
+//見比べ用
+INSERT INTO メッセージ VALUES ('MS000006','0000002','G0001','テストメッセ','',SYSDATE,'');
+
+INSERT INTO メッセージ VALUES ('MS000007','0000001','G0001','a','',SYSDATE,'');

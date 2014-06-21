@@ -1,0 +1,11 @@
+INSERT INTO メール種別
+       VALUES ('MT0','受信');
+
+INSERT INTO メール種別
+       VALUES ('MT1','送信');
+
+INSERT INTO メール種別
+       VALUES ('MT2','未送信');
+
+INSERT INTO メール種別
+       VALUES ('MT3','ゴミ箱');

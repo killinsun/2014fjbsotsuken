@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/*----- ヘッダーのリンク等 -----*/
+
+#headerContentsSpace {
+	width: 300px;
+	height: 15px;
+}
+
+#headerContents {
+	width: 415px;
+	float: right;
+}
+
+.headerList {
+	/*color: #F5F5F5;*/
+	color: yellow;
+	font-size: 12px;
+	float: right;
+	margin-left: 12px;
+}
+
+
+#noticeList {
+	height: 20px;
+	float:right;
+}
+
+#message {
+	height: 20px;
+}
+
+#realtimeChat {
+	height: 20px;
+}
+
+#friends {
+	height: 20px;
+}
+
+#various {
+	height: 20px;
+}
+
+#menuList {
+	height: 20px;
+	float: left;
+}
+
+#myPage {
+	height: 20px;
+}
+
+#userSearch {
+	height: 20px;
+}
+
+.icoSize {
+	height: 25px;
+}

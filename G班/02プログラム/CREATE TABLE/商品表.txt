@@ -1,0 +1,16 @@
+DROP TABLE 商品表;
+
+CREATE TABLE 商品表 (
+商品番号 CHAR(7) PRIMARY KEY,
+商品名 VARCHAR2(60),
+商品情報 VARCHAR2(800),
+単価 NUMBER(10),
+画像パス VARCHAR2(100),
+地域コード CHAR(3)
+)
+
+INSERT INTO 商品表
+VALUES('SH00001','桶','材質:木 板厚:4.2cm','5000','images/oke1.jpg','R01');
+INSERT INTO 商品表
+VALUES('SH00002','入浴剤','泉質:硫黄泉','300','images/n1.gif','R02');
+INSERT INTO 商品表 VALUES('SH00007','天馬 ポーリッシュ 湯おけ','コンパクトで女性にも使いやすい。お手入れしやすいフォルム。<BR>やさしいシルクのようなパールホワイト<BR>優れた銀イオン抗菌で衛生的に使用できます。<BR><BR>本体・・・ポリプロピレン',400,'images/oke5.jpg','R03')

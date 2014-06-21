@@ -1,0 +1,34 @@
+#main {
+	overflow: hidden;
+	height: auto;
+	margin-top:10px;
+}
+
+#main img {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+	border: 0;
+}
+
+#main h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#main p {
+	overflow: hidden;
+	height: auto;
+}
+
+#main p.syousai {
+	margin-bottom: 20px;
+}
+
+#main p.tanka {
+	text-align: right;
+}
+
+#sub .section div {
+	margin:5px 0px 0px 5px;
+}

@@ -1,0 +1,12 @@
+DROP TABLE 予約詳細表;
+
+CREATE TABLE 予約詳細表
+(
+ 予約番号 CHAR(7),
+ 注文番号 CHAR(7) REFERENCES 注文情報表(注文番号),
+ 温泉番号 CHAR(7) REFERENCES 温泉表(温泉番号),
+ 宿泊番号 CHAR(7) REFERENCES 宿泊日程表(宿泊番号),
+ 人数 NUMBER(3),
+ 宿泊日数 NUMBER(2),
+ PRIMARY KEY (予約番号,注文番号)
+)

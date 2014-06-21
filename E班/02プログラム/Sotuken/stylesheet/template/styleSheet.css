@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body {
+	margin: 0px;
+	background-color: #F5F5F5;
+	font-family: "メイリオ", "MS　Pゴシック";
+	color: #0D1218;
+}
+
+img {
+	border-style: none;
+}

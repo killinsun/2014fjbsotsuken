@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="tk.eclipse.plugin.jseditor.launch.JavaScriptLaunchConfigurationType">
+<stringAttribute key="javascript.file" value="I:\Sotuken\sotukenD\userManagement\userSign.jsp"/>
+<listAttribute key="javascript.includes"/>
+</launchConfiguration>

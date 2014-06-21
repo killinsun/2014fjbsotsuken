@@ -1,0 +1,53 @@
+﻿
+/*この辺りはベースの設定です*/
+body{
+ background-color:#FFFFFF;
+}
+.frm{
+	margin:auto;
+	padding:0px;
+	width:802px;
+
+}
+#header{
+	min-width:200px;
+	width:790px;
+	background:linear-gradient(to bottom, orange, white);
+}
+
+
+#nav{
+	float:left;
+	width:198px;
+	height:400px;
+	background-color:#FFFFFF;
+}
+#mainManu{
+	list-style-type: none;
+}
+#mainManu li{
+	margin:5px;
+}
+
+
+#mainContent{
+	width:580px;
+	margin:0px;
+	float:left;
+	margin:auto;
+	height:400px;
+	background-color:#ffffff;
+}
+
+#header,#nav,#mainContent{
+	margin:0px;
+	padding:5px;
+	border:solid 1px #000000;
+
+}
+#title{
+float:left;
+font-size:140%;
+font-weight:bold;
+}
+/*ここまでベースの設定です*/

@@ -1,0 +1,16 @@
+@charset utf-8;
+
+table  td{
+	padding: 5px;
+}
+
+table th {
+	padding: 5px;
+	background-color: #ccccff;
+
+}
+
+#contents h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

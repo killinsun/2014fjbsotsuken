@@ -1,0 +1,16 @@
+CREATE TABLE メール
+	(
+	メールID CHAR(7),
+	ユーザID CHAR(7) REFERENCES ユーザ(ユーザID),
+	送信アドレス VARCHAR2(60) NOT NULL, 
+	受信アドレス VARCHAR2(60) NOT NULL,
+	件名 VARCHAR2(50) NOT NULL,
+	本文 VARCHAR2(4000) NOT NULL,
+	添付 VARCHAR2(4000),
+	送信日時 DATE NOT NULL,
+	保存日時 DATE NOT NULL,
+	メール種別ID CHAR(3),
+	FOREIGN KEY(メール種別ID) REFERENCES メール種別(メール種別ID),
+	PRIMARY KEY(メールID,ユーザID)
+	)
+	

@@ -1,0 +1,9 @@
+DROP TABLE 予約状況表;
+
+CREATE TABLE 予約状況表
+(
+ 温泉番号 CHAR(7) REFERENCES 温泉表(温泉番号),
+ 日付 VARCHAR2(10),
+ 空き部屋数 NUMBER(3),
+ PRIMARY KEY (温泉番号,日付)
+)

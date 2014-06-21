@@ -1,0 +1,10 @@
+DROP TABLE 注文明細表;
+
+CREATE TABLE 注文明細表
+(
+明細番号 CHAR(7),
+注文番号 CHAR(7) REFERENCES 注文情報表(注文番号),
+商品番号 CHAR(7) REFERENCES 商品表(商品番号),
+注文数 NUMBER(3),
+PRIMARY KEY (明細番号,注文番号)
+)

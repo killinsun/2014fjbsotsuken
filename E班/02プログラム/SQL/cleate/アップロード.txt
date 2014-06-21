@@ -1,0 +1,9 @@
+CREATE TABLE アップロード
+	(
+	ファイルID CHAR(6) ,
+	ユーザID CHAR(7) REFERENCES ユーザ(ユーザID),
+	ファイル名 VARCHAR2(50),
+	ファイルパス VARCHAR2(4000),
+	アップロード日時 DATE,
+	PRIMARY KEY (ファイルID,ユーザID)
+	)

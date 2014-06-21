@@ -1,0 +1,17 @@
+DROP TABLE 温泉表;
+
+CREATE TABLE 温泉表
+(
+温泉番号 CHAR(7) PRIMARY KEY,
+温泉名 VARCHAR(60),
+温泉情報 VARCHAR(800),
+部屋数 NUMBER(2),
+日帰り温泉 NUMBER(1),
+宿泊温泉 NUMBER(1),
+画像パス VARCHAR(100),
+地域コード CHAR(3) REFERENCES 地域表(地域コード),
+検索回数 NUMBER(4)
+)
+
+INSERT INTO 温泉表
+VALUES('ON00001','草津温泉','酸性泉',50,0,1,'H:\Ｊ＆Ｇ科\卒業研究\卒業研究-Javaサーバサイド自由制作\01グループ作業用\G班\全画面\images\kusatsu.jpg','R01',167);

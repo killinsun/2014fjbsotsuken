@@ -1,0 +1,54 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MenuServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.MenuServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserMenteServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.UserMenteServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserMenteTourokuServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.UserMenteTourokuServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserMenteHenkouServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.UserMenteHenkouServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserMenteKakuninServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotuken.servlet.UserMenteKakuninServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MenuServlet</servlet-name>
+		<url-pattern>/MenuServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserMenteServlet</servlet-name>
+		<url-pattern>/UserMenteServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserMenteTourokuServlet</servlet-name>
+		<url-pattern>/UserMenteTourokuServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserMenteHenkouServlet</servlet-name>
+		<url-pattern>/UserMenteHenkouServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserMenteKakuninServlet</servlet-name>
+		<url-pattern>/UserMenteKakuninServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>
+

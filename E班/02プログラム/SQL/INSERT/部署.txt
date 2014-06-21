@@ -1,0 +1,2 @@
+INSERT INTO •”(•”ID,•”–¼)
+       VALUES ('B001','•”');

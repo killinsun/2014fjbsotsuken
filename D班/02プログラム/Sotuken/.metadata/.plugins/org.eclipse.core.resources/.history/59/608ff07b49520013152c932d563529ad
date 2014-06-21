@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page pageEncoding="UTF-8" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>レイアウトテスト</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+</head>
+<body>
+<div class="frm">
+	<!--header部分-->
+	<header id="header">
+		<div id="title">
+			トップページ
+		</div>
+		<div id="account" align="right">
+			<div id="name">苗字　名前</div>
+			<!--ログアウトボタン-->
+			<button type="button" id="logout">ログアウト</button>
+		</div>
+		<div>
+		<a href="">2件の新着メールがあります</a>
+		</div>
+
+	</header>
+
+	<!--ページ移動、ナビゲーション部分-->
+<nav id="nav">
+
+			<iframe src="./mainMenu.jsp" name="mainMenu" Align="left" Frameborder="no" Marginheight="0" Width="200">
+
+			</iframe>
+
+	</nav>
+
+
+	<!--作業画面-->
+	<section id="mainContent">
+		<br />
+		<button type="button"  onclick="location.href='/sotukenD/MailServlet'">新規メール</button><br />
+		<h2>新着メール</h2>
+		<table id="mail" cellspacing="0" frame="box" border="1">
+			<tr>
+				<th width ="5%"> <input type="checkbox"> </th>
+				<th width ="20%">送信者</th>
+				<th width ="10%"></th>
+				<th width ="65%">タイトル</th>
+			</tr>
+
+			<tr>
+				<td> <input type="checkbox"> </td>
+				<td>船橋　太郎</td>
+				<td>NEW</td>
+				<td><a href="/sotukenD/MainServlet">シフト変更のお願い</a></td>
+			</tr>
+				<td> <input type="checkbox"> </td>
+				<td>店長</td>
+				<td>NEW</td>
+				<td><a href="">日報報告</a></td>
+			</tr>
+		</table>
+		<input type="submit" value="選択を削除">
+
+	</section>
+</div>
+
+</body>
+</html>

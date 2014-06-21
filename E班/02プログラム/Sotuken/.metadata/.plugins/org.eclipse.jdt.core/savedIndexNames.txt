@@ -1,0 +1,1 @@
+INDEX VERSION 1.126+H:\Ｊ＆Ｇ科\卒業研究\卒業研究-Javaサーバサイド自由制作\01グループ作業用\E班\Sotuken\.metadata\.plugins\org.eclipse.jdt.core

@@ -1,0 +1,10 @@
+DROP TABLE 部屋表;
+
+CREATE TABLE 部屋表
+(
+部屋番号 CHAR(7),
+温泉番号 CHAR(7) REFERENCES 温泉表(温泉番号),
+部屋人数 NUMBER(2),
+料金 NUMBER(6),
+宿泊状況 NUMBER(1)
+)

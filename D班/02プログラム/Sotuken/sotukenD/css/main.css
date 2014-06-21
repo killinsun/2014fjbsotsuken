@@ -1,0 +1,15 @@
+﻿#mail{
+	width:100%;
+	cols:4;
+
+}
+#mail tr td{
+	padding:5px;
+	
+}
+#mail tr th{
+	text-align:left;
+	padding:5px;
+	background-color:#fff666;
+
+}

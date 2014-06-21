@@ -1,0 +1,14 @@
+INSERT INTO ユーザ
+       VALUES ('0000001','赤木　貴宣','アカギ　タカノブ','S0','19921224','akagi_taka','0000','akag@akagi.co.jp','1230000','千葉県八街市','B001','img/icon1.png','わたしは、赤木　貴宣ともうします。','G1');
+
+INSERT INTO ユーザ
+       VALUES ('0000002','菊池　太亮','キクチ　ダイスケ','S1','19921126','kikuchi','0001','kikuchi@kikuchi.co.jp','4560000','千葉県八街市','B001','img/icon2.png','わたしは、菊池　太亮ともうします。','G1');
+
+INSERT INTO ユーザ
+       VALUES ('0000003','半立　直樹','ハンダチ　ナオキ','S0','19920516','handachi','0002','handachi@handachi.co.jp','7890000','千葉県船橋市','B001','img/icon3.png','わたしは、半立　直樹ともうします。','G1');
+
+INSERT INTO ユーザ
+       VALUES ('0000004','湊　景明','ミナト　カゲアキ','S0','19921026','minato','0003','minato@minato.co.jp','10110','千葉県八街市','B001','img/icon4.png','湊 景明です。','G1');
+
+
+

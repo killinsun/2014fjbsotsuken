@@ -1,0 +1,13 @@
+package jp.ac.fjb.sotukenD.bean;
+
+public class UserListBean {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+}

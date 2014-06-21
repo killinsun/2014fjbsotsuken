@@ -1,0 +1,14 @@
+CREATE TABLE メッセージ
+(
+メッセージID CHAR(8),
+ユーザID CHAR(7),
+グループID CHAR(5),
+メッセージ内容 VARCHAR2(4000),
+スタンプID CHAR(6),
+送信時間 DATE NOT NULL,
+チャット画像 VARCHAR2(4000),
+FOREIGN KEY(スタンプID) REFERENCES スタンプ(スタンプID),
+FOREIGN KEY(ユーザID) REFERENCES ユーザ(ユーザID),
+FOREIGN KEY(グループID) REFERENCES グループ(グループID),
+PRIMARY KEY(メッセージID,ユーザID,グループID)
+)

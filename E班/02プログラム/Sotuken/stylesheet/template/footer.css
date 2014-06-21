@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*-----フッター----- */
+#footer {
+	width: 100%;
+	background-color: #DED7CF;
+	
+}
+
+#wrap_footer {
+	width: 980px;
+	height: 100px;
+	margin: 0px auto;
+	background-color: #DED7CF;
+}

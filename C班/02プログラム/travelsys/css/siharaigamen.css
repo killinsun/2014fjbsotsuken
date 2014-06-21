@@ -1,0 +1,61 @@
+@charset utf-8;
+
+#tb {
+	margin: 0 auto;
+	padding: 0;
+	width: 600px;
+	border-style: solid ; 
+	border-width: 1px;
+}
+#okya {
+    border: 1px solid #3399ff;
+    background-color: #3399ff;
+    color: #ffffff;
+    padding: 5px;
+}
+#button {
+	text-align: center;
+
+}
+
+p {
+	padding: 5px;
+}
+
+#a {
+	margin: 0 auto;
+	width: 500px;
+}
+
+table th {
+	background-color: #ccccdf;
+}
+
+table td {
+	padding: 5px;
+}
+
+.small {
+	font-size: 12px;
+	color: #ff0000;
+}
+
+a{/*リンクされた文字*/
+	color: #000000;
+    text-decoration: none;
+}
+a:link {/*未訪問のリンク*/
+	color: #000000;
+    text-decoration: none;
+}
+a:visited {/*訪問後のリンク*/
+    text-decoration: none;
+}
+a:hover {/*マウスをのせたとき*/
+	color: #aaaaaa;
+    text-decoration: none;
+}
+a:active {/*クリック中*/
+	color: #99999;
+	text-decoration: none;
+}

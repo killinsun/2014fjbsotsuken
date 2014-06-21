@@ -1,0 +1,154 @@
+@charset utf-8;
+
+#groups table{
+	margin: 20px auto;
+	width: 600px;
+	color: #ffffff;
+	text-align: center;
+	font-family:'Lucida Grande',
+ 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',
+ Meiryo, メイリオ, sans-serif;
+}
+
+#groups table td{
+	width: 100px;
+	background-color: #0066cc;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.bbsLeft {
+	width: 305px;
+}
+
+#groups a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#groups a{/*リンクされた文字*/
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#groups a:link {/*未訪問のリンク*/
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#groups a:visited {/*訪問後のリンク*/
+    color:#ffffff;
+    text-decoration: none;
+}
+
+#groups table td a:hover {/*マウスをのせたとき*/
+    color: #000000;
+    text-decoration: none;
+	background-color: #66cccc;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#groups a:active {/*クリック中*/
+    text-decoration:none;
+}
+
+#button1 {
+	text-align: right;
+	width: 750px;
+	padding: 10px;
+}
+
+.bbsWrap{
+	background-color: #ede7ed;
+	padding: 5px;
+	margin: 10px;
+	margin-bottom: 30px;
+	border: 1px solid #0066cc;
+}
+
+.title {
+	background-color: #0066cc;
+	color: #ffffff;
+	margin: 5px;
+	padding: 5px;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #006699;
+}
+
+.right {
+	text-align: right;
+}
+
+.comentWrap {
+	font-size: 15px;
+	background-color: #ffffff;
+	width: 720px;
+	padding: 0px;
+    border: 2px solid #3399ff;
+}
+
+.comentWrap h1 {
+	color: #ffffff;
+	font-size: 15px;
+	margin: 0 auto;
+	padding: 2px;
+    background-color: #0066cc;
+}
+
+.coment {
+	padding: 5px;
+	margin: 2px;
+}
+
+.nameLine {
+	border-bottom: 1px solid #3399ff;
+	clear: both;
+}
+
+.leftAlign {
+	float: left;
+	width: 500px;
+}
+
+.rightAlign {
+	text-align: right;
+	float: left;
+	width: 200px;
+}
+
+table {
+	width: 100%;
+}
+
+table td {
+	padding: 5px;
+}
+
+.fontBig {
+	font-size: 20px;
+}
+
+.star {
+	color: #ff9900;
+}
+
+#contents img {
+	width: 300px;
+	height: 200px;
+}
+
+#contents p {
+	padding: 5px;
+	line-height: 1.4em;
+	font-size: 0.9em;
+}

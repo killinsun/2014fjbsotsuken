@@ -1,0 +1,119 @@
+﻿@charset "utf-8";
+
+body {
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	font-size: 75%;
+	line-height: 2;
+	color: #666666;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-image: url(../images/a1380_001399_m.jpg);
+	background-repeat: repeat;
+	/*background-position: 200px 500px;*/
+    	/*background-size: 100px 100px;*/
+
+
+}
+
+ul{
+	list-style-type: none;
+}
+
+
+#aikon {
+	background-image: url(../images/syasyou.jpg);
+	width: 400px;
+	height: 400px;
+	border: solid 1px yellow;
+	float: left;
+	
+}
+
+h1{
+	margin: 0px;
+	padding: 0px;
+	color: black;
+}
+
+input {
+	
+}
+
+.color {
+	color: #1540ef;
+}
+
+/*サブコンテンツ（左側ブロック）
+------------------------------------------------------------------*/
+#sub {
+	border: solid 1px red;
+	float: right;
+	width: 226px;
+	display: inline;
+	margin: 0 auto;
+	background-color: #ffffff;
+	height: 400px;
+}
+
+#sub p {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+/*サブコンテンツ内、サブメニュー
+------------------------------------------------------------------*/
+#sub .submenu {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 5px solid #1540ef;
+	margin-bottom: 20px;
+	border-right: 1px solid #1540ef;
+	border-left: 1px solid #1540ef;
+}
+
+#sub .submenu a {
+	color: #1540ef;
+	text-decoration: none;
+	border-bottom: 1px dotted #1540ef;
+	display: block;
+	width: 224px;
+	background-color: #ffffff;
+}
+
+#sub .submenu a:hover {
+	
+}
+
+/*サブコンテンツ内、サブメニュー下のTOPICSコーナー
+------------------------------------------------------------------*/
+#sub.menubottom {
+	border-right: 1px solid #1540ef;
+	border-bottom: 5px solid #1540ef;
+	border-left: 1px solid #1540ef;
+	margin-left:out;
+	padding-right: 5px;
+	padding-left: 5px;
+	width: 214px;
+}
+#sub {
+	margin-top:180px;
+	background-color: white;
+}
+#AA{
+	width:400px;
+ 	margin-right:auto;
+}
+ 	
+#sub.main {
+	float: right;
+	width: 496px;
+	display: inline;
+	margin-right: 37px;
+}
+
+
+/* Hides from IE-mac \*/
+*html #contents { height: 1%; }
+#contents { display: block; }
+/* End hide from IE-mac */

@@ -1,0 +1,19 @@
+@charset utf-8;
+
+table {
+	margin: 0 auto;
+}
+
+table td {
+	padding: 10px;
+}
+
+.label {
+	background-color: #ccccff;
+	text-align: center;
+}
+
+#button {
+	text-align: center;
+	margin: 20px;
+}

@@ -1,0 +1,291 @@
+@charset "utf-8";
+
+/*-----全体の指定-----*/
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+/*-----メイン-----*/
+#main {
+	margin: 0px auto;
+	width: calc(100% -180px);
+	height: auto;
+}
+
+#timeLine {
+	height: auto;
+	margin-top: 85px;
+	margin-left: 180px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#contents {
+	margin: 0px auto;
+	padding-top: 5px;
+	text-align: center;
+}
+
+/* ----- ツイート領域の設定 -----*/
+#tweetarea {
+	margin: 20px auto;
+	width: 604px;
+	height: 165px;
+	background-color: #CBB093;
+	/*
+	padding: 30px 0px;
+	 */
+}
+
+.tweetTools {
+	margin: 0px;
+	padding: 0px;
+	width: 604px;
+	height: 30px;
+}
+
+#addImage {
+	width: 30px;
+	height: 30px;
+	float: left;
+	padding: 0px;
+}
+
+#selectImage {
+	display: none;
+}
+
+
+#photoIco {
+	width: 120px;
+	height: 30px;
+}
+
+#submitBox {
+	float: right;
+	margin-top: 2px;
+	margin-right: 10px;
+}
+
+.spaceBox {
+	clear: right;
+}
+
+.button {
+	width: 70px;
+	height: 25px;
+}
+
+.userIcoArea {
+
+}
+
+.userIco {
+	width: 50px;
+	height: 50px;
+
+}
+
+
+/*----- テキストエリア系の設定 -----*/
+#tweet {
+	width: 600px;
+	height: 100px;
+}
+
+
+textarea {
+	resize: none;
+}
+
+/*-----タイムラインの設定-----*/
+
+.overWrapTimeLineBox {
+	position: static;
+}
+
+#wrapTimeLineBoxTop {
+	margin-top: 0px;
+}
+
+.wrapTimeLineBox {
+	width: 710px;
+	margin: 50px auto;
+	position: relative;
+}
+
+.userImage {
+	background-color: #DED7CF;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+}
+
+.userImageSize {
+	width: 50px;
+	height: 50px;
+	border: 1px #CBB093 solid;
+}
+
+.timeLineBox {
+	font-size: 14px;
+	width: 600px;
+	height: auto;
+	margin: 0px auto;
+	border: 1px #BC927A solid;
+	background-color: #ECF0F1;
+}
+
+.nameArea {
+	text-align: left;
+	font-weight: bold;
+}
+
+.contents {
+	text-align: left;
+	position: static;
+}
+
+span.time {
+	font-size: 11px;
+	text-align: left;
+}
+
+span.postName {
+	font-size: 11px;
+	text-align: right;
+}
+
+.timeAndPost {
+	width: 600px;
+}
+
+.postName {
+	height: 18px;
+	width: auto;
+	font-size: 11px;
+	float: right;
+}
+
+.time {
+	font-size: 11px;
+	height: 15px;
+	width: 200px;
+}
+
+.favorite {
+	background-color: rgba(51,51,51,0);
+	height: 18px;
+	width: 80px;
+	position: relative;
+	top: -6px;
+	border-style: none;
+	border-left: 1px #BC927A solid;
+	border-right: 1px #BC927A solid;
+	font-weight: bold;
+	text-align: left;
+}
+
+.shareArea {
+	text-align: left;
+	font-size: 12px;
+	border-top: 1px #BC927A solid;
+	height: 18px;
+
+}
+
+.goodCountArea {
+	text-align: left;
+	font-size: 12px;
+	width: 600px;
+	height: auto;
+	margin: 0px auto;
+	border-left: 1px #BC927A solid;
+	border-right: 1px #BC927A solid;
+	background-color: #ECF0F1;
+}
+
+.goodCount {
+
+}
+
+.commentArea {
+	text-align: left;
+	font-size: 12px;
+	width: 600px;
+	height: auto;
+	margin: 0px auto;
+	border: 1px #BC927A solid;
+	background-color: #ECF0F1;
+	position: relative;
+}
+
+.commentContent {
+	position: absolute;
+	left: 35px;
+}
+
+.commentIcon {
+	background-color: #DED7CF;
+	width: 30px;
+	height: 30px;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-bottom: 4px;
+}
+
+.commentUserIconSize {
+	width: 30px;
+	height: 30px;
+	border: 1px #CBB093 solid;
+}
+
+.commentText {
+	height: auto;
+}
+
+span.count {
+
+}
+
+.favorite {
+	margin-top: -1px;
+	margin-left: -1px;
+	margin-right: 12px;
+	height: 20px;
+}
+
+
+
+.comment {
+	margin-top: -1px;
+	margin-left: -17px;
+	height: 20px;
+}
+
+/*-----フッター-----*/
+#footer {
+	margin-top : 0px;
+	padding-top: 0px;
+}
+
+
+/*---------- Chrome専用の指定 ----------*/
+@media screen and (-webkit-min-device-pixel-ratio : 0 ) {
+	#tweet {
+		width: 598px;
+	}
+
+	.tweetTools {
+		margin-top: -8px;
+		padding: 0px;
+		width: 604px;
+		height: 30px;
+	}
+
+}

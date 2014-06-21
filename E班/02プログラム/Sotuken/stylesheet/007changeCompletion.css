@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+
+/*-----メイン-----*/
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+
+#main {
+	margin: 0px auto;
+	width: calc(100% -180px);
+	height: auto;
+}
+
+
+#timeLine {
+	height: auto;
+	margin-top: 85px;
+	margin-left: 180px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+
+#result {
+	padding-top: 60px;
+	padding-left: 330px;
+}
+
+
+
+

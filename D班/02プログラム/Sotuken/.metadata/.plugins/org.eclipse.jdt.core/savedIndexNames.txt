@@ -1,0 +1,16 @@
+INDEX VERSION 1.126+I:\Sotuken\.metadata\.plugins\org.eclipse.jdt.core
+3996802749.index
+3228923395.index
+994430749.index
+4041442860.index
+1411736638.index
+4264505586.index
+3190824318.index
+230599958.index
+655452144.index
+2531416442.index
+2771387243.index
+3240732866.index
+2755368626.index
+3716135199.index
+2229083306.index

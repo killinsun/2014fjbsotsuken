@@ -1,0 +1,11 @@
+INSERT INTO メール
+       VALUES ('M000001','0000001','kikuchi@kikuchi.co.jp','akagi@akagi.co.jp','テスト','テスト受信','/images/test.jpg',SYSDATE,SYSDATE,'MT0');
+
+INSERT INTO メール
+       VALUES ('M000002','0000001','akagi@akagi.co.jp','kikuchi@kikuchi.co.jp','テスト','テスト送信','/images/test.jpg',SYSDATE,SYSDATE,'MT1');
+
+INSERT INTO メール
+       VALUES ('M000003','0000001','akagi@akagi.co.jp','kikuchi@kikuchi.co.jp','テスト','テスト未送信','/images/test.jpg',SYSDATE,SYSDATE,'MT2');
+
+INSERT INTO メール
+       VALUES ('M000004','0000001','akagi@akagi.co.jp','kikuchi@kikuchi.co.jp','テスト','テストゴミ箱','/images/test.jpg',SYSDATE,SYSDATE,'MT3');

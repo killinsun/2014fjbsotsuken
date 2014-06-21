@@ -1,0 +1,75 @@
+﻿@charset "utf-8";
+
+/*-----全体の指定-----*/
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+/*-----メイン-----*/
+#main {
+	margin: 0px auto;
+	width: calc(100% -180px);
+	height: auto;
+}
+
+#timeLine {
+	height: auto;
+	margin-top: 85px;
+	margin-left: 180px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#contents {
+	margin: 0px auto 20px auto	;
+	padding-top: 5px;
+	text-align: center;
+}
+
+#userInfo {
+	padding-left: 160px;
+}
+
+h2 {
+	border-bottom: 1px solid;
+	width: 850px;
+}
+
+#left {
+	height: 120px;
+	width: 120px;
+	text-align: center;
+	float: left;
+}
+
+#right {
+	margin-left: 150px;
+}
+
+.name {
+	height: 50px;
+	width: 150px;
+	text-align: center;
+}
+
+#user {
+	width: 689px;
+	text-align: left;
+}
+
+#user td{
+	border-top: solid 2.5px #a98990;
+	border-bottom: solid 2.5px #a98990;
+	border-left: solid 2.5px #a98990;
+	border-right: solid 2.5px #a98990;
+}
+
+#userIconArea {
+	box-shadow: 1px 1px 5px #aaa;
+}
+
+

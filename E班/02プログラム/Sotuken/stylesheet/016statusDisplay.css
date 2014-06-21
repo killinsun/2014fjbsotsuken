@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*-----メイン-----*/
+
+
+/*-----全体の指定-----*/
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+#main {
+	margin: 0px auto;
+	width: calc(100% -180px);
+	height: auto;
+}
+
+#timeLine {
+	height: auto;
+	margin-top: 85px;
+	margin-left: 180px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#contents {
+	margin: 0px auto;
+	padding-top: 5px;
+	text-align: center;
+}
+
+#centerPosition {
+	width: 980px;
+	margin: 0px auto;
+}
+
+
+#result {
+	padding-top: 60px;
+	text-align: left;
+	font-weight: bold;
+}
+
+#position {
+}
+
+
+

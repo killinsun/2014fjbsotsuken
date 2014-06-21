@@ -1,0 +1,5 @@
+CREATE TABLE Œ ŒÀ
+(
+	Œ ŒÀŽí•ÊID	CHAR(2) PRIMARY KEY,
+	Œ ŒÀ–¼		VARCHAR2(6) NOT NULL
+)

@@ -1,0 +1,56 @@
+
+Insert into 部署表
+Values ('B01' , '事業部' , '');
+
+Insert into 役職表
+Values ('Y00' , '社長' , '');
+
+Insert into レベル表
+Values ('L00' , '001' , '');
+
+Insert into ユーザ表
+Values ('x11g031' , 'g920920' , '吉田 優徳' , '21' , '1992/09/20' , 'O' , 'L00' , '0366253443' , 'x11g031@chiba-fjb.ac.jp' , 'B00' , 'Y00' , '2014/04/01' , ' ');
+
+Insert into ユーザ表
+Values ('x11g023' , 'g920412' , '奈須 健太' , '21' , '1992/09/20' , 'O' , 'L00' , '0000000000' , 'x11g023@chiba-fjb.ac.jp' , 'B00' , 'Y00' , '2014/04/01' , ' ');
+
+Insert into 入室ルーム表
+Values ('R001','x11g031',); 
+
+Insert into チャットルーム表
+Values ('R001' , '' , '');
+
+
+Select ルーム名 , 作成者ユーザID
+From チャットルーム表,入室ルーム表 
+Where チャットルーム表.ルームID = 入室ルーム表.ルームID
+And 入室ルーム表.ユーザID = 'x11g031' ;
+
+
+CREATE SEQUENCE ルームIDシーケンス 
+START WITH 1 
+INCREMENT BY 1  ; 
+(チャット、イベント)
+
+SELECT  'R' || ルームIDシーケンス .nextval FROM dual
+
+SELECT  'R' || ルームIDシーケンス .nextval FROM dual
+
+SELECT  'R' || lpad( ルームIDシーケンス.nextval, 3, '0' ) FROM dual;
+
+Insert into チャットルーム表 Values('C' || lpad( ルームIDシーケンス.nextval, 3, '0' ),'x11g000','部屋ッ！！');
+
+SELECT MAX ( ルームID ) FROM チャットルーム表 where チャットルーム表.作成者ユーザID = 'x11g000';
+
+Select 発言内容 from 発言表 where 発言表.ルームID='R000' ORDER BY 発言ID ASC;
+GROUP BY ルームID 
+
+Select 発言表.発言内容,ユーザ表.氏名  From 発言表,ユーザ表 Where 発言表.ユーザID = ユーザ表.ユーザID AND 発言表.ルームID='R000' ORDER BY 発言ID ASC;
+
+Insert into イベント表 Values('E' || lpad(イベントIDシーケンス.nextval,3,'0'),'2014-4-01','','','入社式','');
+
+CREATE SEQUENCE スケジュールIDシーケンス 
+START WITH 10 
+INCREMENT BY 1  ; 
+
+'C' || lpad( スケジュールIDシーケンス.nextval, 4, '0' )

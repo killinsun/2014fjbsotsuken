@@ -1,0 +1,5 @@
+INSERT INTO «•Ê(«•ÊID,«•Ê)
+       VALUES ('S0','’j');
+       
+INSERT INTO «•Ê(«•ÊID,«•Ê)
+       VALUES ('S1','—');

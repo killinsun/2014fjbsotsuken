@@ -1,0 +1,8 @@
+#Tue Dec 10 11:19:23 JST 2013
+tomcatDir=I\:\\apache-tomcat-sotuken
+eclipse.preferences.version=1
+fixTomcatHomeBug=fixed
+contextsDir=I\:\\apache-tomcat-sotuken\\conf\\Catalina\\localhost
+tomcatVersion=tomcatV6
+computeSourcePath=true
+tomcatConfigFile=I\:\\apache-tomcat-sotuken\\conf\\server.xml

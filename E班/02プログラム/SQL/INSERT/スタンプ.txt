@@ -1,0 +1,2 @@
+INSERT INTO スタンプ(スタンプID,スタンプ画像)
+       VALUES ('ST0001','img/stmp/S0001.png');

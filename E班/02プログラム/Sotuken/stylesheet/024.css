@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*-----メイン-----*/
+#main {
+	margin-left: 30px;
+}
+
+#user {
+	overflow: scroll;
+}
+
+#user table{
+	white-space: nowrap;
+}
+
+.ue {
+	font-weight: bold;
+	text-align: auto;
+}
+
+#sita input {
+	margin-top: 30px;
+	margin-left: 30px;
+}

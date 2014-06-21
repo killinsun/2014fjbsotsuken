@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page pageEncoding="UTF-8" %>
+<head>
+    <meta charset="utf-8" />
+    <title>受信箱</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="frm">
+	<!--header部分-->
+	<header id="header">
+		<div id="title">
+			受信メール
+		</div>
+		<div id="account" align="right">
+			<div id="name">苗字　名前</div>
+			<!--ログアウトボタン-->
+			<button type="button" id="logout">ログアウト</button>
+		</div>
+		<div>
+		<a href="">2件の新着メールがあります</a>
+		</div>
+"H:/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/D班/sotukenD/mail/mail.jsp"
+	</header>
+
+
+	<!--ページ移動、ナビゲーション部分-->
+	<nav id="nav">
+
+			<iframe src="./mainMenu.jsp" name="mainMenu" Align="left" Frameborder="no" Marginheight="0" Width="200">
+
+			</iframe>
+
+	</nav>
+
+
+	<!--作業画面-->
+	<section id="mainContent">
+		送信者<br>
+		<INPUT size="30" type="text" value="船橋太郎" name="subject" ><br>
+		件名<br>
+		<INPUT size="50" type="text" value="シフトの交代の件" name="subject"><br>
+		本文<br>
+		<TEXTAREA cols="75" rows="18" name="maneText" ></TEXTAREA><br>
+		<INPUT type="button" name="answer" value="戻る" style="WIDTH: 50px; HEIGHT: 30px; float:left;"
+		onclick="location.href='/sotukenD/LoginServlet'"/>
+		<INPUT type="button" name="answer" value="返信" style="WIDTH: 50px; HEIGHT: 30px; float:right;
+		margin-right:20px;"onclick="location.href='/sotukenD/MailServlet'"/>
+
+	</section>
+</div>
+
+</body>
+</html>

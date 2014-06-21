@@ -1,0 +1,9 @@
+INSERT INTO グループ
+       VALUES ('G0001','グループ1','img/group1.jpg');
+
+INSERT INTO グループ
+       VALUES ('G0002','グループ2','img/group2.jpg');
+
+INSERT INTO グループ
+       VALUES ('G0003','グループ3','img/group3.jpg');
+

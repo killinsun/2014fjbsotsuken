@@ -1,0 +1,2 @@
+INSERT INTO アップロード
+       VALUES ('F00001','0000001','テスト','/images/test_upload.zip',SYSDATE);

@@ -1,0 +1,423 @@
+// 部署表
+INSERT INTO 部署表
+VALUES ('B00', '代表取締役', 'img/section/section00.png');
+
+INSERT INTO 部署表
+VALUES ('B01', '事業部', 'img/section/section01.png');
+
+INSERT INTO 部署表
+VALUES ('B02', '開発部', 'img/section/section02.png');
+
+INSERT INTO 部署表
+VALUES ('B03', '営業部', 'img/section/section03.png');
+
+INSERT INTO 部署表
+VALUES ('B04', '経理部', 'img/section/section04.png');
+
+INSERT INTO 部署表
+VALUES ('B05', '人事部', 'img/section/section05.png');
+
+INSERT INTO 部署表
+VALUES ('B06', '総務部', 'img/section/section06.png');
+
+
+// 役職表
+INSERT INTO 役職表
+VALUES ('Y00', '社長', 'img/position/position00.png');
+
+INSERT INTO 役職表
+VALUES ('Y01', '副社長', 'img/position/position01.png');
+
+INSERT INTO 役職表
+VALUES ('Y02', '専務', 'img/position/position02.png');
+
+INSERT INTO 役職表
+VALUES ('Y03', '常務', 'img/position/position03.png');
+
+INSERT INTO 役職表
+VALUES ('Y04', '執行役員', 'img/position/position04.png');
+
+INSERT INTO 役職表
+VALUES ('Y05', '部長', 'img/position/position05.png');
+
+INSERT INTO 役職表
+VALUES ('Y06', '次長', 'img/position/position06.png');
+
+INSERT INTO 役職表
+VALUES ('Y07', '課長', 'img/position/position07.png');
+
+INSERT INTO 役職表
+VALUES ('Y08', '係長', 'img/position/position08.png');
+
+INSERT INTO 役職表
+VALUES ('Y09', '主任', 'img/position/position09.png');
+
+
+// レベル表
+INSERT INTO レベル表
+VALUES ('L00', 'Lv1', 'img/level/level01.png');
+
+INSERT INTO レベル表
+VALUES ('L01', 'Lv2', 'img/level/level02.png');
+
+INSERT INTO レベル表
+VALUES ('L02', 'Lv3', 'img/level/level03.png');
+
+INSERT INTO レベル表
+VALUES ('L03', 'Lv4', 'img/level/level04.png');
+
+INSERT INTO レベル表
+VALUES ('L04', 'Lv5', 'img/level/level05.png');
+
+INSERT INTO レベル表
+VALUES ('L05', 'Lv6', 'img/level/level06.png');
+
+INSERT INTO レベル表
+VALUES ('L06', 'Lv7', 'img/level/level07.png');
+
+INSERT INTO レベル表
+VALUES ('L07', 'Lv8', 'img/level/level08.png');
+
+INSERT INTO レベル表
+VALUES ('L08', 'Lv9', 'img/level/level09.png');
+
+
+// ユーザ表
+INSERT INTO ユーザ表
+VALUES('x11g029', 'g871026', '山本樹', '男', '87-10-26', 'B', 'L00', '0432925977', 'x11g029@chiba-fjb.ac.jp', 'B06', 'Y05', '13-04-01', '山本です。よろしくお願いします。');
+
+INSERT INTO ユーザ表
+VALUES('x11g031', 'g920920', '吉田優徳', '男', '92-09-20', 'O', 'L08', '0366253443', 'x11g031@chiba-fjb.ac.jp', 'B00', 'Y00', '06-04-01', 'よしだこ～ぽれ～しょん社長でございます。');
+
+INSERT INTO ユーザ表
+VALUES('x11g000', 'g000000', '船橋太郎', '男', '77-12-07', 'AB', 'L08', '0471234567', 'x11g000@chiba-fjb.ac.jp', 'B02', 'Y04', '06-10-26', '◆ ご挨拶<br /> 2006年10月より、(株)よしだこ～ぽれ～しょんへ入社致しました。<br /> 人事の○○さんとは以前より交流があり、<br /> この度の中途採用につきまし ても多大なるご支援・ご助力を頂きました。<br /> この場を借りて御礼申し上げます。<br /> ');
+
+INSERT INTO ユーザ表
+VALUES('x11g005', 'g921126', '石橋太樹', '男', '92-11-26', 'O', 'L00', '0430000000', 'x11g005@chiba-fjb.ac.jp', 'B06', 'Y05', '06-04-01', '石橋です。よろしくお願いします。');
+
+INSERT INTO ユーザ表
+VALUES('x11g017', 'g920622', '鈴木健太', '男', '92-06-22', 'O', 'L00', '0300000000', 'x11g017@chiba-fjb.ac.jp', 'B06', 'Y05', '11-04-01', '鈴木です。よろしくお願いします。');
+
+INSERT INTO ユーザ表
+VALUES('x11g023', 'g920412', '奈須健太', '男', '92-04-12', 'AB', 'L00', '0470000000', 'x11g023@chiba-fjb.ac.jp', 'B06', 'Y05', '06-04-01', '奈須です。よろしくお願いします。');
+
+
+
+INSERT INTO ユーザ表
+VALUES('x11g032', 'g920801','市川葉菜 ', '女', '92-08-01', 'A', 'L00', '0470000000', 'x11g032@chiba-fjb.ac.jp', 'B06', 'Y05', '07-04-01', '市川です。よろしくお願いします。');
+
+
+INSERT INTO 所持資格表
+VALUES ('x11g032', 'S00');
+
+INSERT INTO ユーザ表
+VALUES('x11g045', 'g920907','片山香奈 ', '女', '92-09-07', 'O', 'L00', '0470000000', 'x11g045@chiba-fjb.ac.jp', 'B05', 'Y05', '07-04-01', '片山です。よろしくお願いします。');
+
+INSERT INTO 所持資格表
+VALUES ('x11g045', 'S00');
+
+INSERT INTO ユーザ表
+VALUES('x11g047', 'g921107','霧山利奈 ', '女', '92-11-07', 'B', 'L00', '0470000000', 'x11g047@chiba-fjb.ac.jp', 'B04', 'Y05', '07-05-01', '霧山です。よろしくお願いします。');
+
+INSERT INTO 所持資格表
+VALUES ('x11g047', 'S00');
+
+INSERT INTO ユーザ表
+VALUES('x11g049', 'g921211','栗木紗奈 ', '女', '92-12-11', 'A ', 'L00', '0470000000', 'x11g049@chiba-fjb.ac.jp', 'B03', 'Y05', '07-06-01', '栗木です。よろしくお願いします。');
+
+INSERT INTO 所持資格表
+VALUES ('x11g049', 'S00');
+
+INSERT INTO ユーザ表
+VALUES('x11g044', 'g920107','山下友里奈 ', '女', '92-1-07', 'B', 'L00', '0470000000', 'x11g044@chiba-fjb.ac.jp', 'B02', 'Y05', '07-03-01', '山下です。よろしくお願いします。');
+
+INSERT INTO 所持資格表
+VALUES ('x11g044', 'S00');
+
+INSERT INTO ユーザ表
+VALUES('x11g050', 'g920207','萱森利奈 ', '女', '92-02-07', 'AB', 'L00', '0470000000', 'x11g050@chiba-fjb.ac.jp', 'B01', 'Y05', '07-09-01', '萱森です。よろしくお願いします。');
+
+INSERT INTO 所持資格表
+VALUES ('x11g050', 'S00');
+
+INSERT INTO 所持資格表
+VALUES ('x11g051', 'S00');
+
+INSERT INTO ユーザ表
+VALUES('x11g051', 'g930405','山中沙里 ', '女', '92-04-05', 'B', 'L00', '0470000000', 'x11g051@chiba-fjb.ac.jp', 'B00', 'Y05', '06-11-01', '山中です。よろしくお願いします。');
+
+
+// 言語表
+INSERT INTO 言語表
+VALUES ('G00', '日本語');
+
+INSERT INTO 言語表
+VALUES ('G01', '中国語');
+
+INSERT INTO 言語表
+VALUES ('G02', '英語');
+
+INSERT INTO 言語表
+VALUES ('G03', 'フランス語');
+
+INSERT INTO 言語表
+VALUES ('G04', 'タイ語');
+
+
+// 使用言語表
+INSERT INTO 使用言語表
+VALUES ('x11g000', 'G00');
+
+INSERT INTO 使用言語表
+VALUES ('x11g000', 'G01');
+
+INSERT INTO 使用言語表
+VALUES ('x11g000', 'G02');
+
+
+// P言語表
+INSERT INTO P言語表
+VALUES ('P00', 'Java言語');
+
+INSERT INTO P言語表
+VALUES ('P01', 'アセンブラ言語');
+
+INSERT INTO P言語表
+VALUES ('P02', 'C言語');
+
+INSERT INTO P言語表
+VALUES ('P03', 'HTML5');
+ 
+
+// 使用P言語表
+INSERT INTO 使用P言語表
+VALUES ('x11g000', 'P00');
+
+INSERT INTO 使用P言語表
+VALUES ('x11g000', 'P02');
+
+INSERT INTO 使用P言語表
+VALUES ('x11g000', 'P03');
+
+
+// 資格表
+INSERT INTO 資格表
+VALUES ('S00', 'ITパスポート');
+
+INSERT INTO 資格表
+VALUES ('S01', '基本情報技術者');
+
+INSERT INTO 資格表
+VALUES ('S02', '応用情報技術者');
+
+INSERT INTO 資格表
+VALUES ('S03', 'Sun Javaプログラミング能力検定');
+
+INSERT INTO 資格表
+VALUES ('S04', 'CISCO技術者認定試験');
+
+INSERT INTO 資格表
+VALUES ('S05', 'UMTP UMLモデリング技術者認定試験');
+
+INSERT INTO 資格表
+VALUES ('S06', 'プロジェクトマネージャ試験');
+
+INSERT INTO 資格表
+VALUES ('S07', 'ビジネス実務マナー検定');
+
+INSERT INTO 資格表
+VALUES ('S08', 'ビジネス文書検定');
+
+INSERT INTO 資格表
+VALUES ('S09', 'TOEIC');
+
+
+// 所持資格表
+INSERT INTO 所持資格表
+VALUES ('x11g000', 'S00');
+
+INSERT INTO 所持資格表
+VALUES ('x11g000', 'S01');
+
+INSERT INTO 所持資格表
+VALUES ('x11g000', 'S02');
+
+INSERT INTO 所持資格表
+VALUES ('x11g000', 'S03');
+
+INSERT INTO 所持資格表
+VALUES ('x11g000', 'S04');
+
+INSERT INTO 所持資格表
+VALUES ('x11g000', 'S05');
+
+INSERT INTO 所持資格表
+VALUES ('x11g000', 'S06');
+
+INSERT INTO 所持資格表
+VALUES ('x11g000', 'S07');
+
+INSERT INTO 所持資格表
+VALUES ('x11g000', 'S08');
+
+INSERT INTO 所持資格表
+VALUES ('x11g000', 'S09');
+
+
+// チャットルーム表
+INSERT INTO チャットルーム表
+VALUES('R000', 'x11g031', '製品企画');
+
+INSERT INTO チャットルーム表
+VALUES('R001', 'x11g000', '基本情報対策');
+
+INSERT INTO チャットルーム表
+VALUES('R002', 'x11g029', '定例会');
+
+INSERT INTO チャットルーム表
+VALUES('R003', 'x11g031', 'OCJP-S対策');
+
+
+// 発言表
+INSERT INTO 発言表
+VALUES('H000', 'R000', 'x11g031', 'プロジェクトチーム用の部屋を作りました。すぐに伝えたい状況などはこちらにお願いします！！', '13-11-28');
+
+INSERT INTO 発言表
+VALUES('H001', 'R000', 'x11g029', 'ありがとうございます。', '13-11-28');
+
+INSERT INTO 発言表
+VALUES('H002', 'R000', 'x11g005', 'ありがとうございます。では早速私から提案があるのですが…', '13-11-28');
+
+INSERT INTO 発言表
+VALUES('H003', 'R000', 'x11g017', 'いいですね。石橋さんお願いします。', '13-11-28');
+
+INSERT INTO 発言表
+VALUES('H001', 'R000', 'x11g023', 'あ、私からも提案があります。', '13-11-28');
+
+
+// 入室ルーム表
+INSERT INTO 入室ルーム表
+VALUES('x11g000', 'R000');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g000', 'R001');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g000', 'R002');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g031', 'R000');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g031', 'R002');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g029', 'R000');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g029', 'R001');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g029', 'R002');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g023', 'R000');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g023', 'R002');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g005', 'R000');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g005', 'R002');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g017', 'R000');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g017', 'R002');
+
+INSERT INTO 入室ルーム表
+VALUES('x11g031', 'R003');
+
+
+
+// スケジュール表
+INSERT INTO スケジュール表
+VALUES ('x11g000', 'C0000', '13-11-29', '09:00', '09:30', '通勤', '通勤時間');
+
+INSERT INTO スケジュール表
+VALUES ('x11g000', 'C0001', '13-11-29', '09:30', '17:00', '会社', '今日は定例会があるので、定時に切り上げられるように頑張る。');
+
+
+// イベント表
+INSERT INTO イベント表
+VALUES('E0000', '13-11-29', '09:30', '09:45', '朝礼', '定例会のお知らせ。');
+
+INSERT INTO イベント表
+VALUES('E0001', '13-11-29', '10:00', '12:00', 'プロジェクトチーム会議', '件の製品企画案について…');
+
+INSERT INTO イベント表
+VALUES('E0002', '13-11-29', '18:30', '20:30', '定例会', '今回は開発部と営業部の交流会となる予定です。');
+
+
+// 投稿属性表
+INSERT INTO 投稿属性表
+VALUES ('Z01', '質問');
+
+INSERT INTO 投稿属性表
+VALUES ('Z02', '情報');
+
+INSERT INTO 投稿属性表
+VALUES ('Z03', '返答');
+
+
+// 投稿表
+INSERT INTO 投稿表
+VALUES ('Q000', 'Z01', 'OCJ-P Silverを取得したいと考えています。<br />おすすめの参考書などありますか？', '002');
+
+INSERT INTO 投稿表
+VALUES ('Q001', 'Z02', '2月14日に飲み会を予定しています。参加希望者は返信にてお知らせ下さい。', '000');
+
+
+// 返答表
+INSERT INTO 返答表
+VALUES ('A000', 'Q002', 'Z02', '参考書はちょっとわかりませんが、勉強に有効なサイトなら知っていますよ。');
+
+INSERT INTO 返答表
+VALUES ('A001', 'Q003', 'Z03', 'Amazonなどで調べると良い物ばかりでしたよ！');
+
+
+// 経歴表
+INSERT INTO 経歴表
+VALUES ('H000', 'x11g000', '20-04-01', '20-04-01', '□□□株式会社 入社');
+
+
+
+
+
+
+
+
+
+drop table 経歴表;
+drop table 投稿属性表;
+drop table 投稿表;
+drop table 返答表;
+drop table イベント表;
+drop table スケジュール表;
+drop table 発言表;
+drop table チャットルーム表;
+drop table 入室ルーム表;
+
+drop table 所持資格表;
+drop table 資格表;
+drop table 使用P言語表;
+drop table P言語表;
+drop table 使用言語表;
+drop table 言語表;
+drop table ユーザ表;
+drop table レベル表;
+drop table 部署表;
+drop table 役職表;

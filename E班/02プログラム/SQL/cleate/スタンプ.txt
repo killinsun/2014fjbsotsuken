@@ -1,0 +1,5 @@
+CREATE TABLE スタンプ
+(
+ スタンプID CHAR(6) PRIMARY KEY,
+ スタンプ画像 VARCHAR2(4000) NOT NULL
+ )

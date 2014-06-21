@@ -1,0 +1,8 @@
+DROP TABLE 宿泊日程表;
+
+CREATE TABLE 宿泊日程表
+(
+宿泊番号 CHAR(6) PRIMARY KEY,
+温泉番号 CHAR(6) REFERENCES 温泉表(温泉番号),
+チェックイン日 DATE
+)

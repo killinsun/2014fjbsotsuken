@@ -1,0 +1,204 @@
+﻿// 卒業研究で実際にデータベースを操作する場合のログイン設定
+ユーザID: javaF_a
+パスワード: fjbjavaf_a
+接続識別子: ux2
+
+// 現在データベースに存在するテーブル名一覧を表示する
+SELECT table_name FROM user_tables;
+
+//完全に作り直す場合
+drop table (親表) cascade
+drop table ユーザ表 cascade
+
+//表の列を増やす場合
+alter table 表 add(
+列名 データ型()
+);
+
+
+// ここからテーブル作成文
+
+// 部署表
+CREATE TABLE 部署表
+(
+	部署ID CHAR(3) PRIMARY KEY,
+	部署名 VARCHAR2(10),
+	部署IMG VARCHAR2(100)
+);
+
+// 役職表
+CREATE TABLE 役職表
+(
+	役職ID CHAR(3) PRIMARY KEY,
+	役職名 VARCHAR2(10),
+	役職IMG VARCHAR2(100)
+);
+
+// レベル表
+CREATE TABLE レベル表
+(
+	レベルID CHAR(3) PRIMARY KEY,
+	レベル名 CHAR(3),
+	レベルIMG VARCHAR2(100)
+);
+
+// ユーザ表
+CREATE TABLE ユーザ表
+(
+	ユーザID CHAR(7) PRIMARY KEY,
+	パスワード VARCHAR2(20) NOT NULL,
+	氏名 VARCHAR2(30) NOT NULL,
+	性別 VARCHAR2(2) NOT NULL,
+	生年月日 DATE,
+	血液型 VARCHAR2(2),
+	レベルID CHAR(3) REFERENCES レベル表 (レベルID),
+	連絡先 VARCHAR2(30),
+	Email VARCHAR2(40),
+	部署ID CHAR(3) REFERENCES 部署表 (部署ID),
+	役職ID CHAR(3) REFERENCES 役職表 (役職ID),
+	入社年月日 DATE,
+	自由欄 VARCHAR2(400)
+);
+
+// 言語表
+CREATE TABLE 言語表
+(
+	言語ID CHAR(3) PRIMARY KEY,
+	言語名 VARCHAR2(20)
+);
+
+// 使用言語表
+CREATE TABLE 使用言語表
+(
+	ユーザID CHAR(7) REFERENCES ユーザ表 (ユーザID),
+	言語ID CHAR(3) REFERENCES 言語表 (言語ID),
+	PRIMARY KEY (ユーザID, 言語ID)
+);
+
+// P言語表
+CREATE TABLE P言語表
+(
+	P言語ID CHAR(3) PRIMARY KEY,
+	P言語名 VARCHAR2(30)
+);
+
+// 使用P言語表
+CREATE TABLE 使用P言語表
+(
+	ユーザID CHAR(7) REFERENCES ユーザ表 (ユーザID),
+	P言語ID CHAR(3) REFERENCES P言語表 (P言語ID),
+	PRIMARY KEY (ユーザID, P言語ID)
+);
+
+// 資格表
+CREATE TABLE 資格表
+(
+	資格ID CHAR(3) PRIMARY KEY,
+	資格名 VARCHAR2(50)
+);
+
+// 所持資格表
+CREATE TABLE 所持資格表
+(
+	ユーザID CHAR(7) REFERENCES ユーザ表 (ユーザID),
+	資格ID CHAR(3) REFERENCES 資格表 (資格ID),
+	PRIMARY KEY (ユーザID, 資格ID)
+);
+
+// チャットルーム表
+CREATE TABLE チャットルーム表
+(
+	ルームID CHAR(4) PRIMARY KEY,
+	作成者ユーザID CHAR(7) REFERENCES ユーザ表 (ユーザID), 
+	ルーム名 VARCHAR2(50)
+);
+
+
+// 入室ルーム表
+CREATE TABLE 入室ルーム表
+(
+	ユーザID CHAR(7) REFERENCES ユーザ表 (ユーザID),
+	ルームID CHAR(4) REFERENCES チャットルーム表(ルームID),
+	PRIMARY KEY (ユーザID, ルームID)
+);
+
+
+// 発言表
+CREATE TABLE 発言表
+(
+	発言ID CHAR(4),
+	ルームID CHAR(4) REFERENCES チャットルーム表 (ルームID),
+	ユーザID CHAR(7) REFERENCES ユーザ表 (ユーザID),
+	発言内容 VARCHAR2(200),
+	発言時間 DATE,
+	PRIMARY KEY (ルームID, ユーザID, 発言ID)
+);
+
+// スケジュール表
+CREATE TABLE スケジュール表
+(
+	ユーザID CHAR(7) REFERENCES ユーザ表 (ユーザID),
+	スケジュールID CHAR(5),
+	日付 DATE,
+	開始時間 VARCHAR2(7),
+	終了時間 VARCHAR2(7),
+	タイトル VARCHAR2(30),
+	内容 VARCHAR2(300),
+	PRIMARY KEY (ユーザID, スケジュールID)
+);
+
+// イベント表
+CREATE TABLE イベント表
+(
+	イベントID CHAR(5) PRIMARY KEY,
+	日付 DATE,
+	開始時間 VARCHAR2(7),
+	終了時間 VARCHAR2(7),
+	タイトル VARCHAR2(30),
+	内容 VARCHAR2(300)
+);
+
+// 投稿属性表
+CREATE TABLE 投稿属性表
+(
+	項目ID CHAR(3) PRIMARY KEY,
+	項目 VARCHAR2(4)
+);
+
+
+// 投稿表
+CREATE TABLE 投稿表
+(
+	投稿NoID CHAR(4) PRIMARY KEY,
+	項目ID CHAR(3) REFERENCES 投稿属性表 (項目ID),
+	投稿内容 VARCHAR2(200),
+	返答数 CHAR(3) DEFAULT 0
+);
+
+// 返答表
+CREATE TABLE 返答表
+(
+	返答NoID CHAR(4) PRIMARY KEY,
+	投稿NoID CHAR(4),
+	項目ID CHAR(3) REFERENCES 投稿属性表 (項目ID),
+	返答内容 VARCHAR2(300)
+);
+
+
+//経歴表
+CREATE TABLE 経歴表
+(
+	経歴ID CHAR(4),
+	作成者ユーザID CHAR(7) REFERENCES ユーザ表 (ユーザID),
+	年 DATE,
+	月 DATE,
+	内容 VARCHAR2(200)
+);
+
+//お知らせ
+Create table お知らせ表
+(
+	お知らせID Char(7)
+	発言内容 VARCHAR2(200),
+	開催日時 DATE,
+);

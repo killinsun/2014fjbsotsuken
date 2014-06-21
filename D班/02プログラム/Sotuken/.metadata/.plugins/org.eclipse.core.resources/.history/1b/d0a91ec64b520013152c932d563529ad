@@ -1,0 +1,54 @@
+<web-app>
+<!--青山担当-->
+	<servlet>
+	  <servlet-name>LoginServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>MainServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.MainServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>MailServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.MailServlet</servlet-class>
+	</servlet>
+<!--安達担当-->
+	<servlet>
+	  <servlet-name>contactListServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.contactListServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>userEditServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.userEditServlet</servlet-class>
+	</servlet>
+	<servlet>
+	  <servlet-name>userListServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.userListServlet</servlet-class>
+	</servlet>
+<!--青山担当-->
+	<servlet-mapping>
+	  <servlet-name>LoginServlet</servlet-name>
+	  <url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>MainServlet</servlet-name>
+	  <url-pattern>/MainServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>MailServlet</servlet-name>
+	  <url-pattern>/MailServlet</url-pattern>
+	</servlet-mapping>
+<!--安達担当-->
+	<servlet-mapping>
+	  <servlet-name>contactListServlet</servlet-name>
+	  <url-pattern>/contactListServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>userEditServlet</servlet-name>
+	  <url-pattern>/userEditServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+	  <servlet-name>userListServlet</servlet-name>
+	  <url-pattern>/userListServlet</url-pattern>
+	</servlet-mapping>
+</web-app>

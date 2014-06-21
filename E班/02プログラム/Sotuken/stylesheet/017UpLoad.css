@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/*-----全体の指定-----*/
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+/*-----メイン-----*/
+#main {
+	margin: 0px auto;
+	width: calc(100% -180px);
+	height: auto;
+}
+
+#timeLine {
+	height: auto;
+	margin-top: 85px;
+	margin-left: 180px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#contents {
+	margin: 0px auto;
+	padding-top: 5px;
+	text-align: center;
+}
+
+
+#message2 {
+  	padding-top: 60px;
+  	margin: 0px auto;
+}
+
+#contents2 {
+	width: 980px;
+	margin: 0px auto;
+}
+
+#centerPosition {
+	margin-left: -150px;
+}
+
+
+p {
+	margin-top: 120px;
+}

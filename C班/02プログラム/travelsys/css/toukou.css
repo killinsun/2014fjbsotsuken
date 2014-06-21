@@ -1,0 +1,48 @@
+@charset utf-8;
+#comentsu {
+
+	background-color: #ffffff;
+	width: 600px;
+	padding: 0 auto;
+    border: 2px solid #3399ff;
+    position:center;
+    margin-left: 80px;
+}
+
+#mjk h1 {
+	color: #ffffff;
+	font-size: 15px;
+	margin: 0 auto;
+	padding: 2px;
+    background-color: #0066cc;
+}
+
+#form {
+	padding: 10px;
+}
+
+#text {
+	float: left;
+	margin-top: 0px;
+	margin-left: 20px;  
+}
+
+#radio {
+	froat: left;
+	margin-left: 220px;
+	width:200px;
+}
+
+#number {
+	margin-left: 30px; 
+}
+#textarea {
+	margin-top: 30px;
+	margin-left: 20px;  
+}
+
+#submit {
+	padding: 5px;
+	margin-left:50px; 
+	margin-top: 10px;
+}

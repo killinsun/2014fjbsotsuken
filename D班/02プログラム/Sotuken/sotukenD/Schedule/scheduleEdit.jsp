@@ -1,0 +1,125 @@
+﻿<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="jp.ac.fjb.sotukenD.bean.ScheduleForBean"%>
+<%@page import="java.util.ArrayList"%>
+
+<%
+	ArrayList<ScheduleForBean> schedule = (ArrayList) session.getAttribute("SCHEDULE_DATA");
+%>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta charset="utf-8" />
+<title>レイアウトテスト</title>
+<link rel="stylesheet" type="text/css" href="/sotukenD/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/sotukenD/css/Schedule.css" />
+<script src="/sotukenD/js/scheduleEdit.js"></script>
+</head>
+<body>
+	<form id="form">
+		<div class="frm">
+			<!--header部分-->
+			<header id="header">
+				<div id="title">スケジュール編集</div>
+				<div id="account" align="right">
+					<div id="name">苗字 名前</div>
+					<!--ログアウトボタン-->
+					<button type="button" id="logout">ログアウト</button>
+				</div>
+				<div>
+
+				</div>
+
+			</header>
+
+			<!--ページ移動、ナビゲーション部分-->
+			<nav id="nav">
+
+				<iframe src="mainMenu.jsp" name="mainMenu" Align="left"
+					Frameborder="no" Marginheight="0" Width="200"> </iframe>
+
+			</nav>
+
+
+			<!--作業画面-->
+			<section id="mainContent">
+				<!-- ここから1セット -->
+				<%
+					for (int i = 0; i < schedule.size(); i++) {
+						ScheduleForBean s = schedule.get(i);
+				%>
+				<%
+					if (s.getEventEnd() == null) {
+				%>
+				<br><br>
+				<%=s.getEventStart().substring(0,10)%><br> <br>
+				<%=s.getEventName()%>
+				<div id="Kobetu">
+					<%=s.getEventContent()%>
+					<%
+						String sId = s.getScheduleId();
+					%>
+				</div>
+				<br>
+				<button type=button id="editButton"
+					onclick="updateClick('<%=s.getScheduleId()%>')"
+					style="WIDTH: 100px; HEIGHT: 30px">更新</button>
+				<button type=button id="deleteButton"
+					onclick="deleteClick('<%=s.getScheduleId()%>')"
+					style="WIDTH: 100px; HEIGHT: 30px">削除</button>
+				<%
+					} else {
+				%>
+				<br><br>
+				<%=s.getEventStart().substring(0,10)%>
+				-
+				<%=s.getEventEnd().substring(0,10)%><br> <br>
+				<%=s.getEventName()%>
+				<div id="Ikkatu">
+					<%=s.getEventContent()%>
+				</div>
+				<br>
+				<button type=button onclick="updateClick('<%=s.getScheduleId()%>')"
+					style="WIDTH: 100px; HEIGHT: 30px">更新</button>
+				<button type=button onclick="deleteClick('<%=s.getScheduleId()%>')"
+					style="WIDTH: 100px; HEIGHT: 30px">削除</button>
+				<%
+					}
+				%>
+				<%
+					}
+
+				%>
+				<!-- ここまで1セット -->
+
+				<br> <br> <br> <br>
+				<input type="text" name="year1" id="year1" size="2" maxlength="4">年
+				<input type="text" name="manth1" id="manth1" size="1" maxlength="2">月
+				<input type="text" name="day1" id="day1" size="1" maxlength="2">日
+				-
+				<input type="text" name="year2" id="year" size="2"  maxlength="4">年
+				<input type="text" name="manth2" id="manth2" size="1" maxlength="2">月
+				<input type="text" name="day2" id="day2" size="1" maxlength="2">日
+					<br> <input
+					type="text" name="eventTitle" id="eventTitle" size="45"
+					maxlength="40" placeholder=" イベントタイトルを入力してください"><br>
+				<textarea name="eventContent" id="eventContent" cols="40" rows="4"
+					maxlength="40" placeholder="イベント内容を入力してください"></textarea>
+				<br>
+
+				<button type=button onclick="insertClick()"
+					style="WIDTH: 100px; HEIGHT: 30px">登録</button>
+				<input type="reset" value="リセット" style="WIDTH: 100px; HEIGHT: 30px">
+
+				<button type="button" style="WIDTH: 100px; HEIGHT: 30px"
+					onclick="location.href='/sotukenD/ForScheduleMainServlet'">戻る</button>
+
+
+			</section>
+		</div>
+		<input type="hidden" id="scheduleId" name="scheduleId"> <input
+			type="hidden" id="buttonId" name="buttonId">
+	</form>
+</body>
+</html>

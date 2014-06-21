@@ -1,0 +1,28 @@
+DROP TABLE 地域表;
+
+CREATE TABLE 地域表
+(
+地域コード CHAR(3) PRIMARY KEY,
+地域名 VARCHAR2(10)
+)
+
+INSERT INTO 地域表
+VALUES('R01','北海道');
+INSERT INTO 地域表
+VALUES('R02','東北');
+INSERT INTO 地域表
+VALUES('R03','関東');
+INSERT INTO 地域表
+VALUES('R04','北陸・信越');
+INSERT INTO 地域表
+VALUES('R05','東海');
+INSERT INTO 地域表
+VALUES('R06','近畿');
+INSERT INTO 地域表
+VALUES('R07','中国');
+INSERT INTO 地域表
+VALUES('R08','四国');
+INSERT INTO 地域表
+VALUES('R09','九州');
+INSERT INTO 地域表
+VALUES('R10','沖縄');

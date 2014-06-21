@@ -1,0 +1,93 @@
+#guzzu {
+   width:787px;
+   left:160px;
+   margin:0 auto 15px;
+   background:#fff;
+}
+
+.pagenavi {
+	width: 100%;
+	height: 30px;
+	color: #432A16;
+	font-size:80%;
+	background: url(http://img.shop-pro.jp/tmpl_img/26/pagenavi_bg.gif) no-repeat;
+ 	margin-bottom: 5px;
+}
+
+.product_list {
+	float: left;
+	width: 175px;
+	text-align: center;
+	padding:0px 0px 15px;
+}
+
+.product_item {
+	text-align:center;
+	width:175px;
+	margin:0px auto;
+}
+
+.product_item img {
+	padding: 4px;
+	border: 1px #dacdb9 solid;
+}
+
+.product_item .name {
+	line-height: 120%;
+	margin:10px 0px 0px;
+}
+
+.product_item .name img{
+	vertical-align:middle;
+}
+
+.product_item .price {
+	margin:5px 0px 0px;
+	color: #333333;
+}
+
+.product_item .expl {
+	color: #999;
+	font-size:80%;
+	height: 50px;
+	line-height:120%;
+	text-align: left;
+	margin:0px 1px 3px;
+	overflow:hidden;
+}
+
+.product_list a,
+.product_list a:link,
+.product_list a:visited {
+	text-decoration:none;
+}
+
+.product_list a:active,
+.product_list a:hover {
+	text-decoration:none;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+/* table */
+#main table {
+   width:100%;
+   border-collapse:collapse;
+}
+
+#main .kenta .kenta2 .pagenavi table td {
+   text-align:center;
+   border:0;
+}
+
+#main .kenta .kenta2 .sort_02 tr td {
+	text-align:right
+	border:0;
+}
+
+#sub .section div {
+	margin-left: 5px;
+	margin-top: 5px;
+}

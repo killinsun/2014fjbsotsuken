@@ -1,0 +1,8 @@
+DROP TABLE 注文情報表;
+
+CREATE TABLE 注文情報表
+(
+注文番号 CHAR(7) PRIMARY KEY,
+ユーザID CHAR(7) REFERENCES ユーザ表(ユーザID),
+注文日時 DATE NOT NULL
+)

@@ -1,0 +1,20 @@
+package jp.ac.fjb.sotukenD.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class userSignServlet {
+
+		protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+				throws ServletException, IOException {
+
+			RequestDispatcher dp = req.getRequestDispatcher("userSign.jsp");
+			dp.forward(req, resp);
+
+	}
+
+}

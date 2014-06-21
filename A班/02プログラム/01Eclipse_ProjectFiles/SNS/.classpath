@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="WEB-INF/src"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/catalina-ant.jar"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/catalina-ha.jar"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/catalina-tribes.jar"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/ecj-3.7.jar"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/el-api.jar"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/jasper.jar"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/jasper-el.jar"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="//winsv1/win_ut/Ｊ＆Ｇ科/卒業研究/卒業研究-Javaサーバサイド自由制作/01グループ作業用/A班/apache-tomcat-sotuken/lib/servlet-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

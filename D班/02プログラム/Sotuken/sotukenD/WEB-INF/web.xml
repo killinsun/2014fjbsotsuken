@@ -1,0 +1,173 @@
+<web-app>
+
+<!-- 安達 -->
+	<servlet>
+	  <servlet-name>ForUserEditServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.ForUserEditServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+	  <servlet-name>ForUserSignServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.ForUserSignServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+	  <servlet-name>ForUserListServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.ForUserListServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+	  <servlet-name>ForUserConServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.ForUserConServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+	  <servlet-name>LogoutServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+	  <servlet-name>ForUserSignServlet</servlet-name>
+	  <url-pattern>/ForUserSignServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+	  <servlet-name>ForUserEditServlet</servlet-name>
+	  <url-pattern>/ForUserEditServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+	  <servlet-name>ForUserListServlet</servlet-name>
+	  <url-pattern>/ForUserListServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+	  <servlet-name>ForUserConServlet</servlet-name>
+	  <url-pattern>/ForUserConServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+	  <servlet-name>LogoutServlet</servlet-name>
+	  <url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+
+<!-- 青山 -->
+		<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotukenD.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>MainServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotukenD.servlet.MainServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>MailServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotukenD.servlet.MailServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MailSServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotukenD.servlet.MailSServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MailSendServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotukenD.servlet.MailSendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>MainServlet</servlet-name>
+		<url-pattern>/MainServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>MailServlet</servlet-name>
+		<url-pattern>/MailServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MailSServlet</servlet-name>
+		<url-pattern>/MailSServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MailSendServlet</servlet-name>
+		<url-pattern>/MailSendServlet</url-pattern>
+	</servlet-mapping>
+<!-- 吹田 -->
+	<servlet>
+	  <servlet-name>ForShiftShowServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.ForShiftShowServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>ForShiftShowServlet</servlet-name>
+	  <url-pattern>/ForShiftShowServlet</url-pattern>
+	</servlet-mapping>
+
+		<servlet>
+	  <servlet-name>ForShiftCreateServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.ForShiftCreateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>ForShiftCreateServlet</servlet-name>
+	  <url-pattern>/ForShiftCreateServlet</url-pattern>
+	</servlet-mapping>
+		<servlet>
+	  <servlet-name>ShiftConserveServlet</servlet-name>
+	  <servlet-class>jp.ac.fjb.sotukenD.servlet.ShiftConserveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	  <servlet-name>ShiftConserveServlet</servlet-name>
+	  <url-pattern>/ShiftConserveServlet</url-pattern>
+	</servlet-mapping>
+<!-- 村上 -->
+	<servlet>
+		<servlet-name>ForScheduleMainServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotukenD.servlet.ForScheduleMainServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ForScheduleEditServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotukenD.servlet.ForScheduleEditServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ForScheduleConServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotukenD.servlet.ForScheduleConServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForScheduleMainServlet</servlet-name>
+		<url-pattern>/ForScheduleMainServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ForScheduleEditServlet</servlet-name>
+		<url-pattern>/ForScheduleEditServlet</url-pattern>
+	</servlet-mapping>
+
+		<servlet-mapping>
+		<servlet-name>ForScheduleConServlet</servlet-name>
+		<url-pattern>/ForScheduleConServlet</url-pattern>
+	</servlet-mapping>
+<!-- 田中 -->
+	<servlet>
+		<servlet-name>ForShiftTeiServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotukenD.servlet.ForShiftTeiServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ForShiftMainServlet</servlet-name>
+		<servlet-class>jp.ac.fjb.sotukenD.servlet.ForShiftMainServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForShiftTeiServlet</servlet-name>
+		<url-pattern>/ForShiftTeiServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ForShiftMainServlet</servlet-name>
+		<url-pattern>/ForShiftMainServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
+

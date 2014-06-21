@@ -1,0 +1,182 @@
+package org.apache.jsp.Shift;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class shiftMain_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List _jspx_dependants;
+
+  private javax.el.ExpressionFactory _el_expressionfactory;
+  private org.apache.AnnotationProcessor _jsp_annotationprocessor;
+
+  public Object getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
+    _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
+  }
+
+  public void _jspDestroy() {
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n");
+      out.write("<head>\r\n");
+      out.write("    <meta charset=\"utf-8\" />\r\n");
+      out.write("    <title>レイアウトテスト</title>\r\n");
+      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"../style.css\" />\r\n");
+      out.write("    <link rel=\"stylesheet\" type=\"text/css\" href=\"calendar.css\" />\r\n");
+      out.write("</head>\r\n");
+      out.write("<body>\r\n");
+      out.write("<div class=\"frm\">\r\n");
+      out.write("\t<!--header部分-->\r\n");
+      out.write("\t<header id=\"header\">\r\n");
+      out.write("\t\t\t<div id=\"title\">\r\n");
+      out.write("\t\t\tシフト確認\r\n");
+      out.write("\t\t</div>\r\n");
+      out.write("\t\t<div id=\"account\" align=\"right\">\r\n");
+      out.write("\t\t\t<div id=\"name\">苗字　名前</div>\r\n");
+      out.write("\t\t\t<!--ログアウトボタン-->\r\n");
+      out.write("\t\t\t<button type=\"button\" id=\"logout\">ログアウト</button>\r\n");
+      out.write("\t\t</div>\r\n");
+      out.write("\t\t<div>\r\n");
+      out.write("\t\t<a href=\"\">2件の新着メールがあります</a>\r\n");
+      out.write("\t\t</div>\r\n");
+      out.write("\t\r\n");
+      out.write("\t</header>\r\n");
+      out.write("\t\r\n");
+      out.write("\t<!--ページ移動、ナビゲーション部分-->\r\n");
+      out.write("\t<nav id=\"nav\">\r\n");
+      out.write("\t\t<ul id=\"mainManu\">\r\n");
+      out.write("\t\t\t<li><a href=\"shiftMain.jsp\">シフト確認</a></li>\r\n");
+      out.write("\t\t\t<li><a href=\"../Schedule/scheduleMain.jsp\">スケジュール</a></li>\r\n");
+      out.write("\t\t\t<li><a href=\"../main.jsp\">メールボックス</a></li>\r\n");
+      out.write("\t\t\t<li><a href=\"../mail/daily.jsp\">日報</a></li>\r\n");
+      out.write("\t\t\t<li><a href=\"../proceeds/proceedsTop.jsp\">売上確認画面</a></li>\r\n");
+      out.write("\t\t\t<li><a href=\"../userManagement/contactList.jsp\">連絡先</a></li>\r\n");
+      out.write("\t\t\t<li><a href=\"../winny/common.jsp\">ファイル共有</a></li>\r\n");
+      out.write("\t\t\t<li><a href=\"../userManagement/contactList.jsp\">ユーザー管理</a></li>\r\n");
+      out.write("\t\t</ul>\r\n");
+      out.write("\t</nav>\r\n");
+      out.write("\t\r\n");
+      out.write("\t\r\n");
+      out.write("\t<!--作業画面-->\r\n");
+      out.write("\t<section id=\"mainContent\">\r\n");
+      out.write("\t<BUTTON type=\"button\">9月</BUTTON>\r\n");
+      out.write("\t<font size=\"5\">10月</font>\r\n");
+      out.write("\t<BUTTON type=\"button\">11月</BUTTON>\r\n");
+      out.write("<table border=\"0\" width=\"150\">\r\n");
+      out.write("<tr></tr>\r\n");
+      out.write("<tr><td>\r\n");
+      out.write("<table border=\"0\" width=\"550\" height=\"40\" cellpadding=\"2\" cellspacing=\"1\" bgcolor=\"#002047\">\r\n");
+      out.write("<tr align=\"center\" bgcolor=\"#CCCCFF\">\r\n");
+      out.write("\t\t\t<td><font color=\"#FF0000\">日</font></td>\r\n");
+      out.write("\t\t\t<td>月</td>\r\n");
+      out.write("\t\t\t<td>火</td>\r\n");
+      out.write("\t\t\t<td>水</td>\r\n");
+      out.write("\t\t\t<td>木</td>\r\n");
+      out.write("\t\t\t<td>金</td>\r\n");
+      out.write("\t\t\t<td><font color=\"#FF0000\">土</font></td>\r\n");
+      out.write("</tr>\r\n");
+      out.write("<table border=\"0\" width=\"550\" height=\"280\" cellpadding=\"2\" cellspacing=\"1\" bgcolor=\"#002047\">\r\n");
+      out.write("<tr align=\"center\" bgcolor=\"#FFFFFF\">\r\n");
+      out.write("\t\t\t<td></td>\r\n");
+      out.write("\t\t\t<td></td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"shiftShow.jsp\" style=\"text-decoration:none;\">1</a></td>\r\n");
+      out.write("\t\t\t<td>2</td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">3</a></td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">4</a></td>\r\n");
+      out.write("\t\t\t<td>5</td>\r\n");
+      out.write("</tr>\r\n");
+      out.write("<tr align=\"center\" bgcolor=\"#FFFFFF\">\r\n");
+      out.write("\t\t\t<td>6</td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">7</a></td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">8</a></td>\r\n");
+      out.write("\t\t\t<td>9</td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">10</a></td>\r\n");
+      out.write("\t\t\t<td>11</td>\r\n");
+      out.write("\t\t\t<td>12</td>\r\n");
+      out.write("</tr>\r\n");
+      out.write("<tr align=\"center\" bgcolor=\"#FFFFFF\">\r\n");
+      out.write("\t\t\t<td>13</td>\r\n");
+      out.write("\t\t\t<td>14</td>\r\n");
+      out.write("\t\t\t<td>15</td>\r\n");
+      out.write("\t\t\t<td>16</td>\r\n");
+      out.write("\t\t\t<td>17</td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">18</a></td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">19</a></td>\r\n");
+      out.write("</tr>\r\n");
+      out.write("<tr align=\"center\" bgcolor=\"#FFFFFF\">\r\n");
+      out.write("\t\t\t<td>20</td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">21</a></td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">22</a></td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">23</a></td>\r\n");
+      out.write("\t\t\t<td>24</td>\r\n");
+      out.write("\t\t\t<td>25</td>\r\n");
+      out.write("\t\t\t<td>26</td>\r\n");
+      out.write("</tr>\r\n");
+      out.write("<tr align=\"center\" bgcolor=\"#FFFFFF\">\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">27</a></td>\r\n");
+      out.write("\t\t\t<td>28</td>\r\n");
+      out.write("\t\t\t<td>29</td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">30</a></td>\r\n");
+      out.write("\t\t\t<td BGCOLOR=\"#CCFFFF\"><a href=\"/Struts1.2/jsp/html/data_view.jsp\">31</a></td>\r\n");
+      out.write("\t\t\t<td></td>\r\n");
+      out.write("\t\t\t<td></td>\r\n");
+      out.write("</tr>\r\n");
+      out.write("</table>\r\n");
+      out.write("</td></tr>\r\n");
+      out.write("</table>\r\n");
+      out.write("<a href=\"shiftTei.jsp\" style=\"text-decoration:none;\">\r\n");
+      out.write("<input type=\"submit\" value=\"シフト提出画面\" style=\"WIDTH: 100px; HEIGHT: 30px;\">\r\n");
+      out.write("</a>\r\n");
+      out.write("\t\t\t\t\r\n");
+      out.write("\t\t<br>\r\n");
+      out.write("\t</section>\r\n");
+      out.write("</div>\t\r\n");
+      out.write("\r\n");
+      out.write("</body>\r\n");
+      out.write("</html>\r\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          try { out.clearBuffer(); } catch (java.io.IOException e) {}
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

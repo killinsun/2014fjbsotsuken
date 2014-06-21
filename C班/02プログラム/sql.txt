@@ -1,0 +1,206 @@
+﻿ux2 で接続　id:javaF_c pass:fjbjavaf_c
+
+どんなテーブルがあるのかを確認する
+select table_name
+from user_tables;
+
+テーブル削除　drop tabele 表名
+
+SELECT table_name FROM user_tables;
+
+変更
+alter table 表 modify (
+変更列 変更後のデータ型
+)
+
+ユーザ表
+create table ユーザ
+(
+	ユーザID char(8) primary key,
+	パスワード varchar2(40) not null,
+	名前 varchar2(30) not null,
+	フリガナ varchar2(30) not null,
+	メールアドレス varchar2(50) not null,
+	生年月日 date not null,
+	性別 varchar2(6) ,
+	電話番号 varchar2(22) not null,
+	郵便番号 char(7) not null,
+	住所 varchar2(50) not null,
+	ユーザ種別ID char(1) not null references 権限(ユーザ種別ID)
+)
+
+create table プラン
+(
+	プランID char(5) primary key,
+	プラン名 varchar2(30) not null,
+	観光地ID char(5) not null references 観光地(観光地ID),
+	デフォルト宿泊先ID char(5) not null references 宿泊先(宿泊先ID),
+	デフォルト出発駅ID char(5) not null references 駅(駅ID),
+	到着駅ID char(5) not null references 駅(駅ID),
+	宿泊日数 number(3) not null,
+	デフォルト料金 number(5) not null,
+	イメージ画像URL varchar2(100),
+	キーワード varchar2(30),
+	コメント varchar2(300),
+	予約開始 date not null,
+	最大人数 number(3),
+	予約終了 date
+)
+
+create table 注文
+(
+	注文ID char(7) primary key,
+	ユーザID char(8) not null references ユーザ(ユーザID),
+	プランID char(5) not null references プラン(プランID),
+	注文日 date default sysdate,
+	宿泊先ID char(5) not null references 宿泊先(宿泊先ID),
+	出発駅ID char(5) not null references 駅(駅ID),
+	人数 number(3) not null,
+	料金 number(7) not null,
+	クレジットID char(7) not null references クレジットカード(クレジットID)
+)
+
+create table 掲示板 
+(
+	掲示板投稿ナンバー char(7) primary key,
+	プランID char(5) not null references プラン(プランID),
+	ユーザID char(8) not null references ユーザ(ユーザID),
+	投稿者名 varchar2(30) not null ,
+	投稿者コメント varchar2(300),
+	投稿日時 date default sysdate,
+	イメージ画像URL varchar2(100)
+) 
+
+create table コメント
+(
+	コメントナンバー char(7) primary key,
+	掲示板投稿ナンバー char(7) not null references 掲示板(掲示板投稿ナンバー),
+	ユーザID char(8) not null ,
+	コメント投稿者名 varchar(30) not null,
+	評価 number(1),
+	コメント varchar2(300) not null,
+	投稿日時 date default sysdate
+)
+
+create table 権限
+(
+	ユーザ種別ID char(1) primary key,
+	ユーザ種別名 varchar2(20) not null
+)
+
+create table クレジットカード
+(
+	クレジットID char(7) primary key,
+	ユーザID char(8) not null references ユーザ(ユーザID),
+	クレジットカード会社名 varchar2(30) not null,
+	クレジットカード番号 varchar2(20) not null, 
+	名義人 varchar2(30) not null,
+	有効期限 date not null
+)
+
+create table 観光地
+(
+	観光地ID char(5) primary key,
+	観光地名 varchar(20) not null,
+	県ID char(5) not null references 県(県ID)
+)
+
+create table 駅
+(
+	駅ID char(5) primary key,
+	駅名 varchar2(10) not null,
+	フリガナ varchar2(20) not null
+)
+
+create table 県
+(
+	県ID char(5) primary key,
+	県名 varchar(20) not null,
+	地域ID char(5) not null references 地域(地域ID)
+)
+
+create table 地域
+(
+	地域ID char(5) primary key,
+	地域名 varchar2(20) not null
+)
+
+create table 宿泊先
+(
+	宿泊先ID char(5) primary key,
+	宿泊先名 varchar2(30) not null,
+	フリガナ varchar2 (30) not null,
+	住所 varchar2(50) not null,
+	電話番号 varchar2(22) not null,
+	郵便番号 number(7) not null,
+	メールアドレス varchar2(50) not null,
+	観光地ID char(5) not null references 観光地(観光地ID),
+	キーワード varchar2(30),
+	料金 number(6) not null,
+	コメント varchar2(300),
+	イメージ画像URL varchar2(100),
+	チェックイン時間 varchar2(20)
+)
+
+インサート
+insert into 権限
+values(0,'管理者');
+
+insert into 権限
+values(1,'一般ユーザ');
+
+insert into 地域
+values('t0000','北海道');
+
+insert into 地域
+values('t0001','東北');
+
+insert into 県
+values('k0000','北海道','t0000');
+
+insert into 県
+values('k0001','青森','t0001');
+
+insert into 駅
+values('s0000','函館','ハコダテ');
+
+insert into 駅
+values('s0001','青森','アオモリ');
+
+insert into 観光地
+values('c0000','南北海道','k0000');
+
+insert into 観光地
+values('c0001','青森','k0001');
+
+insert into ユーザ
+values('u0000000','a','長谷尾孝','ハセオタカシ','x11g025@chiba-fjb.ac.jp','1992-07-04','男','0123456789',2891144,'千葉県八街',0);
+
+insert into ユーザ
+values('u0000001','b','大津拓馬','オオツタクマ','x11g000@chiba-fjb.ac.jp','1992-05-21','男','0987654321',2224444,'千葉県船橋',1);
+
+insert into 宿泊先
+values('y0000','函館パークホテル','ハコダテパークホテル','北海道函館市本町','234565433',1112222,'hakodatepark@mail.com','c0000','函館 激安',5000,'安いです','','10:00:00');
+
+insert into 宿泊先
+values('y0001','青森国際ホテル','アオモリコクサイホテル','青森県青森市山田','098890800',5554444,'aomorikokusai@mail.com','c0001','青森 高級',30000,'豪華です','','14:00:00');
+
+insert into クレジットカード
+values('q000000','u0000001','JCBカード','111000222000','ootsutakuma','2014-01-01');
+
+insert into クレジットカード
+values('q000001','u0000001','VISAカード','111000222333','ootsutakuma','2015-01-01');
+
+insert  into プラン
+values('p0000','函館旅行','c0000','y0000','s0001','s0000',2,22000,'','','','2014-09-01',20)
+
+insert into 注文
+values('o000000','u0000001','p0000',default,'y0000','s0001',7,154000,'q000000')
+
+insert into 掲示板
+values('b000000','p0000','u0000001','たくま君','なかなかいい旅行になりました、何よりリーズナブルなのがいいです。',default,'')
+
+
+insert into コメント
+values('z000000','b000000','u0000001','たくま君',4,'言い忘れてましたが、ご飯は出てきません',default)
+

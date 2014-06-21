@@ -1,0 +1,9 @@
+#Tue Nov 26 14:55:08 JST 2013
+managerUrl=http\://localhost\:8080/manager
+tomcatDir=I\:\\apache-tomcat-sotuken
+eclipse.preferences.version=1
+fixTomcatHomeBug=fixed
+contextsDir=I\:\\apache-tomcat-sotuken\\conf\\Catalina\\localhost
+tomcatVersion=tomcatV6
+computeSourcePath=true
+tomcatConfigFile=I\:\\apache-tomcat-sotuken\\conf\\server.xml

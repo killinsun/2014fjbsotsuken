@@ -1,0 +1,20 @@
+#zentai{
+overflow-y: scroll;
+height:320px;
+
+}
+#memori{
+	padding: 0px;
+	margin-left:172px;
+}
+#bgcol{
+	background-color:#FF00FF;
+}
+#ttl{
+	font-size:16px;
+}
+#kotei td{
+	margin:0px;
+	padding:0px;
+	font-size:26px;
+}

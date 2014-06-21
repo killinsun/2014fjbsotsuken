@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/*-----ヘッダー----- */
+
+
+#header {
+	background-color: #0D1218;
+	width: 100%;
+	height: 85px;
+	margin: 0px auto;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+
+#headerSpace {
+	width: 980px;
+	height: 40px;
+}
+
+#wrap_header {
+	width: 980px;
+	height: 80px;
+	margin: 0px auto;
+}
+
+#logo {
+	width: 200px;
+	height: 38px;
+	/*padding-top: 30px;*/
+}
+
+

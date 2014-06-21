@@ -1,0 +1,13 @@
+DROP TABLE クレジット表;
+
+CREATE TABLE クレジット表
+(
+カード番号 CHAR(16) PRIMARY KEY,
+ユーザID CHAR(7) REFERENCES ユーザ表(ユーザID),
+カード種類 VARCHAR2(50),
+カード名義 VARCHAR2(50),
+有効期限 DATE
+)
+
+INSERT INTO クレジット表
+VALUES(

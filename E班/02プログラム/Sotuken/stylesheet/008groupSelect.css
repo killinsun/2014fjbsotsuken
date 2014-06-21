@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/*-----メイン-----*/
+#main {
+	margin: 0px auto;
+	width: calc(100% -180px);
+	height: auto;
+}
+
+#timeLine {
+	height: auto;
+	margin-top: 85px;
+	margin-left: 180px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+#contents {
+	margin: 0px auto;
+	padding-top: 5px;
+	text-align: center;
+}
+
+
+table {
+	border-spacing: 0px;
+	margin: 0px auto 50px auto;
+
+}
+
+.chatGroupBorder, .chatGroupBorderLast{
+	width: 600px;
+	background-color: #F5F5F5;
+	text-align: left;
+}
+
+.chatGroupBorder{
+	border-top: 2px #BC927A solid;
+	border-left: 2px #BC927A solid;
+	border-bottom: 2px #BC927A solid;
+	border-right: 2px #BC927A solid;
+}
+
+.chatGroupBorderLast{
+	border: 2px #BC927A solid;
+}
+
+td > img{
+	float: left;
+	margin-right: 20px;
+}
+
+.groupText {
+
+}
+
+.groupTitle{
+	font-weight: bold;
+}
+
+.chatContents {
+
+}
+
